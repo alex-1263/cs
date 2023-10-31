@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+textarea {
+    resize: none;
+}
+
+.main {
+    width: 100%;
+    height: 1500px;
+}
+
+.left {
+    float: left;
+}
+
+
+.banner {
+    font-size: 35px;
+    width: 50%;
+    margin: auto;
+    border-bottom: 3px solid rgb(202, 202, 202);
+}
+
+.main form {
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    line-height: 70px;
+    border-bottom: 2px solid rgb(182, 182, 182);
+}
+
+.main ul {
+    list-style-type: none;
+}
+
+.main li {
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.main input {
+    line-height: 25px;
+    background-color: antiquewhite;
+    border: 1px solid rgb(0, 0, 0)
+}
+
+.main button {
+    border: 0;
+    width: 150px;
+    height: 50px;
+    margin-top: 18px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(58, 255, 4), rgb(49, 117, 70));
+}
+
+.main input:nth-of-type(n+2) {
+    margin-right: 50px;
+}
+
+.main label {
+    display: inline-block;
+    width: 220px;
+    line-height: 70px;
+    vertical-align: top;
+}

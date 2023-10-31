@@ -1,0 +1,23 @@
+C51 COMPILER V9.60.7.0   __________                                                        06/12/2023 09:17:00 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE __________
+OBJECT MODULE PLACED IN 按键计数器.OBJ
+COMPILER INVOKED BY: D:\Program Files\Keilc51\C51\BIN\C51.EXE 按键计数器.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    115    ----
+   CONSTANT SIZE    =     10    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       2
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,30 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.mian{
+    margin: auto;
+    width: 1600px;
+    height:1000px;
+}
+
+.main-top img{
+    width:1000px;
+    height:360px;
+}
+.main-mid img{
+    width:200px;
+    height:300px;
+}
+.main-bottom img{
+    width:200px;
+    height:300px;
+}
+   
+.main-label label{display: inline-block;
+    width:200px;
+    height:300px;
+    line-height: 30px;
+    background-color: black;
+}

@@ -1,0 +1,61 @@
+C51 COMPILER V9.60.7.0   MAIN                                                              06/12/2023 09:23:30 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: D:\Program Files\Keilc51\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include <reg51.h>
+   2          
+   3          unsigned char code ledchar[] = 
+   4          {
+   5              0xc0, 0xf9, 0xa4, 0xb0, 0x99, 0x92, 0x82, 0xf8, 0x80, 0x90 
+   6          };
+   7          
+   8          sbit s1 = P3^0;
+   9          sbit s2 = P3^1;
+  10          sbit button = P1^0;
+  11          
+  12          void delay(unsigned int ms)
+  13          {
+  14   1          unsigned int i, j;
+  15   1          for (i = 0; i < ms; i++)
+  16   1              for (j = 0; j < 456; j++);
+  17   1      }
+  18          
+  19          void main()
+  20          {
+  21   1          int count = 0;
+  22   1          while (1) {
+  23   2              if (button == 0) {  // check if button is pressed
+  24   3                  count++;
+  25   3                  while (button == 0);  // wait for button release
+  26   3              }
+  27   2              
+  28   2              // display count on LED
+  29   2              s1 = 1;
+  30   2              s2 = 0;
+  31   2              P2 = ledchar[count / 10];
+  32   2              delay(30);
+  33   2              s1 = 0; 
+  34   2              s2 = 1;
+  35   2              P2 = ledchar[count % 10];
+  36   2              delay(30);
+  37   2          }
+  38   1      }       
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    115    ----
+   CONSTANT SIZE    =     10    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       2
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

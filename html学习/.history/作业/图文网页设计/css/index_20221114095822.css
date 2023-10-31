@@ -1,0 +1,15 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.mian{
+    margin: auto;
+    width:1000px;
+    height:600px;
+}
+
+.main-top img{
+    width:800px;
+    height:200px
+}

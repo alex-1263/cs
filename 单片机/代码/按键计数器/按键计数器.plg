@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\Document\cs\单片机\代码\按键计数器\按键计数器.uvproj
+Project File Date:  05/29/2023
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling STARTUP.A51...
+A51 MACRO ASSEMBLER V8.2.7.0 - SN: K1DZC-J4I8VC
+COPYRIGHT ARM Germany GmbH 2016
+"D:\Program Files\Keilc51\C51\BIN\A51.EXE" "STARTUP.A51" SET (SMALL) DEBUG EP
+A51 FATAL ERROR -
+  FILE:       STARTUP.A51
+  ERROR:      FILE DOES NOT EXIST
+A51 TERMINATED.
+目标未创建
+Build target 'Target 1'
+assembling STARTUP.A51...
+A51 MACRO ASSEMBLER V8.2.7.0 - SN: K1DZC-J4I8VC
+COPYRIGHT ARM Germany GmbH 2016
+"D:\Program Files\Keilc51\C51\BIN\A51.EXE" "STARTUP.A51" SET (SMALL) DEBUG EP
+A51 FATAL ERROR -
+  FILE:       STARTUP.A51
+  ERROR:      FILE DOES NOT EXIST
+A51 TERMINATED.
+目标未创建
+compiling 按键计数器.c...
+按键计数器.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+A51 MACRO ASSEMBLER V8.2.7.0 - SN: K1DZC-J4I8VC
+COPYRIGHT ARM Germany GmbH 2016
+"D:\Program Files\Keilc51\C51\BIN\A51.EXE" "STARTUP.A51" SET (SMALL) DEBUG EP
+A51 FATAL ERROR -
+  FILE:       STARTUP.A51
+  ERROR:      FILE DOES NOT EXIST
+A51 TERMINATED.
+目标未创建

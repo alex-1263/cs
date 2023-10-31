@@ -1,0 +1,28 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.mian{
+    margin: auto;
+    width:1;
+    height:1000px;
+}
+
+.main-top img{
+    width:800px;
+    height:200px;
+}
+.main-mid img{
+    width:200px;
+    height:300px;
+}
+.main-label{
+    width:200px;
+    height:300px;
+}
+.main-bottom img{
+    width:200px;
+    height:300px;
+}
+   

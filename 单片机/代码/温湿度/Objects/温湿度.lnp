@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\wenshidu.obj" 
+TO ".\Objects\梁物業" 
+PRINT(".\Listings\梁物業.m51")

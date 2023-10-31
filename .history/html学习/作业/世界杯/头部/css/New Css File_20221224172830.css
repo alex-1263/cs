@@ -1,0 +1,31 @@
+*{
+	margin: 0 auto;
+	padding: 0;<!-- 使用通配符,让网页默认样式统一,课本21页 -->
+}
+
+.top{
+	height: 70px;
+	background-color: #eeeeee;
+	border-bottom: 1px darkgrey solid;<!-- 我们设置下边框的大小以及深灰色实线边框,课本169页 -->
+}
+.top .banner{
+	padding-left: 600px;<!--设置对象距离左边的边距补白间隔-->
+}
+.top .banner li{
+	float: left;
+	font-size: 40px;
+	margin: 0 20px;
+	font-weight: bold;
+}
+.banner img{
+	width: 40px;
+	height: 40px;
+	padding: 7px;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	color: black;
+	text-decoration: none;
+}

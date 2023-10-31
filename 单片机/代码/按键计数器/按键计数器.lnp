@@ -1,0 +1,4 @@
+"STARTUP.obj",
+"按键计数器.obj" 
+TO "按键计数器" 
+RAMSIZE(256) 

@@ -1,0 +1,89 @@
+#box{
+	width: 100%;
+	height: 100%;
+	background-color:white;
+	}
+#banner{
+	width: 1000px;
+	height: 300px;
+	margin: 0 auto;
+	}
+#menu{
+	width: 1000px;
+	height: 40px;
+	background-color:#BEACCB;
+	border: 3px dashed #B4BBC2;
+	margin: 0 auto;
+	}
+#main{
+	width: 1000px;
+	height:1000px;
+	background-color: white;
+	margin: 0 auto;
+	}
+#left{
+	height: 1000px;
+	width:260px;
+	background-color: #D2C8E0;
+	float: left;
+}
+#right{
+	height: 1000px;
+	width:740px ;
+	background-color:#BFA0BB;
+	float: left;
+}
+#footer{
+	width: 1000px;
+	height: 40px;
+	background-color: #BEACCB;
+	margin: 0 auto;
+	}	
+#menu {
+	text-align: center;
+	padding-top: 20px;
+}
+#作者 span{display: block;
+   border-top: 2px dashed palevioletred;
+   border-bottom: 2px dashed palevioletred;
+   margin-top: 15px;
+   float: none;
+}
+#作者 img{border: 3px solid plum;
+       padding: 8px;
+	   border-radius: 20px;
+}
+#活力{height: 290px;
+margin-top: 10px;
+}
+#活力 h2{margin-top: 15px;
+margin-bottom: -15px;
+}
+#活力 img{
+	float: left;
+	margin:(0px,10px,10px,10px);
+}
+#活力 li{ float: left;
+list-style: none;
+padding: 10px;
+width: 50px;
+}	
+#活力 ul{padding-left: 25px;
+padding-right: 15px;
+}
+#列表{
+	width: 254px;
+	height: 364px;
+	border: 3px solid plum;
+}
+#列表 ul {padding-left:25px;
+padding-right: 10px
+}
+#列表 li{float: left;
+width: 220px;
+padding: 10px;
+
+
+}
+#列表 h2{margin-top: 10px;
+}

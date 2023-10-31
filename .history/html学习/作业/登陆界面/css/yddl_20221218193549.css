@@ -1,0 +1,88 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main {
+    height: 1440px;
+    width: 100%;
+    background-image: url(../images/yddlbackground.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.top {
+    width: 100%;
+    height: 200px;
+}
+
+.center {
+    width: 100%;
+    height: 630px;
+}
+
+
+.mid {
+    margin: auto;
+    width: 18%;
+    height: 630px;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+.uimg {
+    text-align: center;
+    width: 100%;
+}
+
+.uimg img {
+    margin-top: 70px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.form {
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.text {
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.form input {
+    line-height: 40px;
+    width: 300px;
+    border: 0;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.781);
+    color: white;
+}
+
+.mid button {
+    border: 0;
+    width: 150px;
+    height: 50px;
+    margin-top: 18px;
+    font-size: 30px;
+    color: white;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, rgb(220, 242, 214), rgb(23, 113, 176));
+
+}
+
+input:focus {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    background-image: linear-gradient(to right, rgba(220, 242, 214, 0.5), rgba(23, 113, 176, 0.5));
+}
+
+button:active {
+    background-image: linear-gradient(to right, rgb(23, 113, 176), rgb(220, 242, 214));
+}

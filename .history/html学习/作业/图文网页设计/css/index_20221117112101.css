@@ -1,0 +1,89 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.box{
+    height: 1600px;
+    width:1600px;
+    margin: 0 auto;
+}
+.mian{
+    margin: auto;
+    width: 1100px;
+    height:1000px;
+}
+
+.main-mid{
+    height: 300px;
+    width: 1100px;
+}
+.main-bottom{
+    height: 300px;
+    width: 1100px;
+}
+.main-top img{
+    width:1020px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+    height:360px;
+}
+.main-mid img{
+    width:200px;
+    height:300px;
+}
+.main-bottom img{
+    width:200px;
+    height:300px;
+}
+
+.img1{
+    float: left;
+}
+.img1:hover label{
+    display: inline-block;
+    transition: all 1s  0s;
+    height: 100px;
+    font-size: 20px;
+    color: black;
+}
+.img2{
+    float: left;
+}
+.img2:hover label{
+    display: inline-block;
+    transition: all 1s  0s;
+    height: 100px;
+    font-size: 20px;
+    color: black;
+}
+label.main-label{
+    float: left;
+    width:200px;
+    height:300px;
+    background-color: rgba(0,0,0,0.5);
+    vertical-align:top ;
+    text-align: center;
+    font-size: 30px;
+    line-height: 300px;
+}
+
+label.img-label{
+        display: inline-block;
+        width:200px;
+        height: 5px;
+        bottom: 260px;
+        position:absolute;
+        background-image: linear-gradient(to right, rgba(220, 242, 214, 0.5), rgba(23, 113, 176, 0.5));
+        text-align: center;
+        color: rgba(255, 255, 255, 0);
+    }
+
+label.img-label2{
+        display: inline-block;
+        width:200px;
+        height: 5px;
+        bottom: 0px;
+        position:absolute;
+        background-image: linear-gradient(to right, rgba(220, 242, 214, 0.5), rgba(23, 113, 176, 0.5));
+        text-align: center;
+        color: rgba(255, 255, 255, 0);
+    }

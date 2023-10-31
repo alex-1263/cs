@@ -1,0 +1,397 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    06/14/2023  17:14:22  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+D:\KEIL\C51\BIN\BL51.EXE .\Objects\STARTUP.obj, .\Objects\wenshidu.obj TO .\Objects\ÎÂÊª¶È PRINT (.\Listings\ÎÂÊª¶È.m51)
+>> 
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\STARTUP.obj (?C_STARTUP)
+  .\Objects\wenshidu.obj (WENSHIDU)
+  D:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  .\Objects\ÎÂÊª¶È (?C_STARTUP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     002AH     UNIT         ?DT?WENSHIDU
+            DATA    0032H     0006H     UNIT         _DATA_GROUP_
+            IDATA   0038H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     008CH     UNIT         ?C_C51STARTUP
+            CODE    008FH     0087H     UNIT         ?PR?DHT11_RECEIVE?WENSHIDU
+            CODE    0116H     0039H     UNIT         ?PR?DISPLAY_1602?WENSHIDU
+            CODE    014FH     0031H     UNIT         ?C_INITSEG
+            CODE    0180H     0025H     UNIT         ?PR?DHT11_REC_BYTE?WENSHIDU
+            CODE    01A5H     001EH     UNIT         ?PR?_DHT11_DELAY_MS?WENSHIDU
+            CODE    01C3H     001AH     UNIT         ?PR?INIT_1602?WENSHIDU
+            CODE    01DDH     0015H     UNIT         ?PR?_DELAY?WENSHIDU
+            CODE    01F2H     0015H     UNIT         ?PR?MAIN?WENSHIDU
+            CODE    0207H     0012H     UNIT         ?PR?_WR_COM?WENSHIDU
+            CODE    0219H     0012H     UNIT         ?PR?_WR_DATA?WENSHIDU
+            CODE    022BH     0010H     UNIT         ?PR?RD_BF?WENSHIDU
+            CODE    023BH     0010H     UNIT         ?PR?DHT11_START?WENSHIDU
+            CODE    024BH     0006H     UNIT         ?PR?DELAY_DHT11_40US?WENSHIDU
+            CODE    0251H     0006H     UNIT         ?PR?DELAY_DHT11_30US?WENSHIDU
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\ÎÂÊª¶È (?C_STARTUP)
+
+
+SEGMENT                                 DATA_GROUP 
+  +--> CALLED SEGMENT                 START    LENGTH
+-----------------------------------------------------
+?C_C51STARTUP                         -----    -----
+  +--> ?PR?MAIN?WENSHIDU
+  +--> ?C_INITSEG
+
+?PR?MAIN?WENSHIDU                     -----    -----
+  +--> ?PR?INIT_1602?WENSHIDU
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  06/14/2023  17:14:22  PAGE 2
+
+
+  +--> ?PR?DISPLAY_1602?WENSHIDU
+  +--> ?PR?_DHT11_DELAY_MS?WENSHIDU
+  +--> ?PR?DHT11_RECEIVE?WENSHIDU
+
+?PR?INIT_1602?WENSHIDU                -----    -----
+  +--> ?PR?_DELAY?WENSHIDU
+  +--> ?PR?_WR_COM?WENSHIDU
+
+?PR?_DELAY?WENSHIDU                   -----    -----
+  +--> ?PR?_WR_COM?WENSHIDU
+
+?PR?DISPLAY_1602?WENSHIDU             -----    -----
+  +--> ?PR?_DELAY?WENSHIDU
+  +--> ?PR?_WR_DATA?WENSHIDU
+  +--> ?PR?RD_BF?WENSHIDU
+
+?PR?_WR_DATA?WENSHIDU                 -----    -----
+  +--> ?PR?_DELAY?WENSHIDU
+
+?PR?DHT11_RECEIVE?WENSHIDU            0032H    0006H
+  +--> ?PR?DHT11_START?WENSHIDU
+  +--> ?PR?DHT11_REC_BYTE?WENSHIDU
+  +--> ?PR?DELAY_DHT11_40US?WENSHIDU
+
+?PR?DHT11_START?WENSHIDU              -----    -----
+  +--> ?PR?_DHT11_DELAY_MS?WENSHIDU
+  +--> ?PR?DELAY_DHT11_30US?WENSHIDU
+
+?PR?DHT11_REC_BYTE?WENSHIDU           -----    -----
+  +--> ?PR?DELAY_DHT11_40US?WENSHIDU
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\ÎÂÊª¶È (?C_STARTUP)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ?C_STARTUP
+  C:0003H         SEGMENT       ?C_C51STARTUP
+  I:0038H         SEGMENT       ?STACK
+  C:0000H         PUBLIC        ?C_STARTUP
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  N:0000H         SYMBOL        IBPSTACK
+  N:0100H         SYMBOL        IBPSTACKTOP
+  N:0080H         SYMBOL        IDATALEN
+  C:0006H         SYMBOL        IDATALOOP
+  N:0000H         SYMBOL        PBPSTACK
+  N:0100H         SYMBOL        PBPSTACKTOP
+  N:0000H         SYMBOL        PDATALEN
+  N:0000H         SYMBOL        PDATASTART
+  N:0000H         SYMBOL        PPAGE
+  N:0000H         SYMBOL        PPAGEENABLE
+  D:00A0H         SYMBOL        PPAGE_SFR
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  06/14/2023  17:14:22  PAGE 3
+
+
+  D:0081H         SYMBOL        SP
+  C:0003H         SYMBOL        STARTUP1
+  N:0000H         SYMBOL        XBPSTACK
+  N:0000H         SYMBOL        XBPSTACKTOP
+  N:0000H         SYMBOL        XDATALEN
+  N:0000H         SYMBOL        XDATASTART
+  C:0000H         LINE#         126
+  C:0003H         LINE#         133
+  C:0005H         LINE#         134
+  C:0006H         LINE#         135
+  C:0007H         LINE#         136
+  C:0009H         LINE#         185
+  C:000CH         LINE#         196
+  -------         ENDMOD        ?C_STARTUP
+
+  -------         MODULE        WENSHIDU
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:022BH         PUBLIC        rd_bf
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  C:0116H         PUBLIC        Display_1602
+  C:0207H         PUBLIC        _wr_com
+  C:008FH         PUBLIC        DHT11_receive
+  D:00A8H         PUBLIC        IE
+  C:01E4H         PUBLIC        _delay
+  D:00B8H         PUBLIC        IP
+  B:0090H.0       PUBLIC        RS
+  C:01F2H         PUBLIC        main
+  B:0090H.1       PUBLIC        RW
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:0008H         PUBLIC        tab
+  C:01C3H         PUBLIC        Init_1602
+  C:0251H         PUBLIC        Delay_DHT11_30us
+  C:024BH         PUBLIC        Delay_DHT11_40us
+  B:0090H.2       PUBLIC        E
+  C:023BH         PUBLIC        DHT11_start
+  D:0012H         PUBLIC        line1
+  D:0022H         PUBLIC        line2
+  C:0219H         PUBLIC        _wr_data
+  D:00C8H         PUBLIC        T2CON
+  C:0180H         PUBLIC        DHT11_rec_byte
+  C:01A5H         PUBLIC        _DHT11_delay_ms
+  D:00D0H         PUBLIC        PSW
+  B:0090H.6       PUBLIC        Data
+  C:01DFH         SYMBOL        L?0060
+  -------         PROC          L?0059
+  -------         ENDPROC       L?0059
+  C:01DFH         SYMBOL        L?0060
+  -------         PROC          _DELAY
+  D:0007H         SYMBOL        xms
+  -------         DO            
+  D:0007H         SYMBOL        x
+  D:0006H         SYMBOL        y
+  -------         ENDDO         
+  C:01E4H         LINE#         15
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  06/14/2023  17:14:22  PAGE 4
+
+
+  C:01E4H         LINE#         16
+  C:01E4H         LINE#         18
+  C:01EAH         LINE#         19
+  C:01F1H         LINE#         20
+  -------         ENDPROC       _DELAY
+  -------         PROC          _DHT11_DELAY_MS
+  D:0006H         SYMBOL        n
+  -------         DO            
+  D:0006H         SYMBOL        i
+  D:0004H         SYMBOL        j
+  -------         ENDDO         
+  C:01A5H         LINE#         21
+  C:01A5H         LINE#         22
+  C:01A5H         LINE#         24
+  C:01AEH         LINE#         25
+  C:01C2H         LINE#         26
+  -------         ENDPROC       _DHT11_DELAY_MS
+  -------         PROC          DELAY_DHT11_40US
+  -------         DO            
+  D:0007H         SYMBOL        i
+  -------         ENDDO         
+  C:024BH         LINE#         27
+  C:024BH         LINE#         28
+  C:024BH         LINE#         31
+  C:024CH         LINE#         32
+  C:024EH         LINE#         33
+  C:0250H         LINE#         34
+  -------         ENDPROC       DELAY_DHT11_40US
+  -------         PROC          DELAY_DHT11_30US
+  -------         DO            
+  D:0007H         SYMBOL        i
+  -------         ENDDO         
+  C:0251H         LINE#         35
+  C:0251H         LINE#         36
+  C:0251H         LINE#         39
+  C:0252H         LINE#         40
+  C:0254H         LINE#         41
+  C:0256H         LINE#         42
+  -------         ENDPROC       DELAY_DHT11_30US
+  -------         PROC          _WR_COM
+  D:0007H         SYMBOL        comm
+  C:0207H         LINE#         44
+  C:0207H         LINE#         45
+  C:0207H         LINE#         46
+  C:0209H         LINE#         47
+  C:020BH         LINE#         48
+  C:020DH         LINE#         49
+  C:020FH         LINE#         50
+  C:0214H         LINE#         51
+  C:0216H         LINE#         52
+  C:0218H         LINE#         53
+  -------         ENDPROC       _WR_COM
+  -------         PROC          _WR_DATA
+  D:0007H         SYMBOL        dat
+  C:0219H         LINE#         54
+  C:0219H         LINE#         55
+  C:0219H         LINE#         56
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  06/14/2023  17:14:22  PAGE 5
+
+
+  C:021BH         LINE#         57
+  C:021DH         LINE#         58
+  C:021FH         LINE#         59
+  C:0221H         LINE#         60
+  C:0226H         LINE#         61
+  C:0228H         LINE#         62
+  C:022AH         LINE#         63
+  -------         ENDPROC       _WR_DATA
+  -------         PROC          RD_BF
+  -------         DO            
+  D:0007H         SYMBOL        bflag
+  -------         ENDDO         
+  C:022BH         LINE#         64
+  C:022BH         LINE#         65
+  C:022BH         LINE#         67
+  C:022DH         LINE#         68
+  C:022FH         LINE#         69
+  C:0231H         LINE#         70
+  C:0236H         LINE#         71
+  C:0238H         LINE#         72
+  C:023AH         LINE#         73
+  C:023AH         LINE#         74
+  -------         ENDPROC       RD_BF
+  -------         PROC          INIT_1602
+  C:01C3H         LINE#         75
+  C:01C3H         LINE#         76
+  C:01C3H         LINE#         77
+  C:01C3H         LINE#         78
+  C:01C6H         LINE#         79
+  C:01C8H         LINE#         80
+  C:01CBH         LINE#         81
+  C:01CDH         LINE#         82
+  C:01D0H         LINE#         83
+  C:01D0H         LINE#         84
+  C:01D3H         LINE#         85
+  C:01D8H         LINE#         86
+  -------         ENDPROC       INIT_1602
+  -------         PROC          DISPLAY_1602
+  -------         DO            
+  D:0005H         SYMBOL        i
+  -------         ENDDO         
+  C:0116H         LINE#         88
+  C:0116H         LINE#         89
+  C:0116H         LINE#         91
+  C:0118H         LINE#         92
+  C:011BH         LINE#         93
+  C:011DH         LINE#         94
+  C:011DH         LINE#         95
+  C:0126H         LINE#         96
+  C:012BH         LINE#         97
+  C:0131H         LINE#         98
+  C:0135H         LINE#         99
+  C:0137H         LINE#         100
+  C:013AH         LINE#         101
+  C:013CH         LINE#         102
+  C:013CH         LINE#         103
+  C:0145H         LINE#         104
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  06/14/2023  17:14:22  PAGE 6
+
+
+  C:014AH         LINE#         105
+  C:014EH         LINE#         106
+  -------         ENDPROC       DISPLAY_1602
+  -------         PROC          DHT11_START
+  C:023BH         LINE#         108
+  C:023BH         LINE#         109
+  C:023BH         LINE#         110
+  C:023DH         LINE#         111
+  C:023FH         LINE#         112
+  C:0246H         LINE#         113
+  C:0248H         LINE#         114
+  -------         ENDPROC       DHT11_START
+  -------         PROC          DHT11_REC_BYTE
+  -------         DO            
+  D:0005H         SYMBOL        i
+  D:0006H         SYMBOL        dat
+  -------         ENDDO         
+  C:0180H         LINE#         116
+  C:0180H         LINE#         117
+  C:0180H         LINE#         118
+  C:0182H         LINE#         119
+  C:0183H         LINE#         120
+  C:0183H         LINE#         121
+  C:0186H         LINE#         122
+  C:0189H         LINE#         123
+  C:0195H         LINE#         124
+  C:0198H         LINE#         125
+  C:0198H         LINE#         126
+  C:019BH         LINE#         127
+  C:019EH         LINE#         128
+  C:019EH         LINE#         130
+  C:01A2H         LINE#         131
+  C:01A4H         LINE#         132
+  -------         ENDPROC       DHT11_REC_BYTE
+  -------         PROC          DHT11_RECEIVE
+  -------         DO            
+  D:0032H         SYMBOL        R_H
+  D:0033H         SYMBOL        R_L
+  D:0034H         SYMBOL        T_H
+  D:0001H         SYMBOL        T_L
+  D:0002H         SYMBOL        RH
+  D:0035H         SYMBOL        RL
+  D:0003H         SYMBOL        TH
+  D:0036H         SYMBOL        TL
+  D:0037H         SYMBOL        revise
+  -------         ENDDO         
+  C:008FH         LINE#         133
+  C:008FH         LINE#         134
+  C:008FH         LINE#         136
+  C:0092H         LINE#         137
+  C:0098H         LINE#         138
+  C:0098H         LINE#         139
+  C:009BH         LINE#         140
+  C:009EH         LINE#         141
+  C:00A3H         LINE#         142
+  C:00A8H         LINE#         143
+  C:00ADH         LINE#         144
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  06/14/2023  17:14:22  PAGE 7
+
+
+  C:00B2H         LINE#         145
+  C:00B7H         LINE#         147
+  C:00BAH         LINE#         149
+  C:00D9H         LINE#         150
+  C:00D9H         LINE#         151
+  C:00DBH         LINE#         152
+  C:00DEH         LINE#         153
+  C:00E0H         LINE#         154
+  C:00E2H         LINE#         155
+  C:00E2H         LINE#         156
+  C:00EDH         LINE#         157
+  C:00FAH         LINE#         158
+  C:0105H         LINE#         159
+  C:0112H         LINE#         160
+  C:0115H         LINE#         161
+  C:0115H         LINE#         162
+  -------         ENDPROC       DHT11_RECEIVE
+  -------         PROC          MAIN
+  C:01F2H         LINE#         164
+  C:01F2H         LINE#         165
+  C:01F2H         LINE#         166
+  C:01F5H         LINE#         167
+  C:01F8H         LINE#         168
+  C:01FFH         LINE#         169
+  C:01FFH         LINE#         170
+  C:01FFH         LINE#         171
+  C:0202H         LINE#         172
+  C:0205H         LINE#         173
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        WENSHIDU
+
+Program Size: data=57.0 xdata=0 code=599
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

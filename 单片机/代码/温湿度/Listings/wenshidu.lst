@@ -1,0 +1,204 @@
+C51 COMPILER V9.57.0.0   WENSHIDU                                                          06/14/2023 17:14:22 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE WENSHIDU
+OBJECT MODULE PLACED IN .\Objects\wenshidu.obj
+COMPILER INVOKED BY: D:\keil\C51\BIN\C51.EXE wenshidu.c BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\wenshidu.lst) OBJECT(
+                    -.\Objects\wenshidu.obj)
+
+line level    source
+
+   1          #include<reg52.h>
+   2          #include<intrins.h>
+   3          #define LCD_DATA P2
+   4          
+   5          sbit Data=P1^6;   //∂®“ÂŒ¬ ™∂»¥´∏–∆˜
+   6          sbit RS = P1^0;
+   7          sbit RW = P1^1;
+   8          sbit E = P1^2;
+   9          
+  10          unsigned char line1[16]={" Hum  Tem       "};
+  11          unsigned char line2[16]={"   %     C      "};
+  12          
+  13          unsigned char tab[]={'0','1','2','3','4','5','6','7','8','9'};
+  14                          
+  15          void delay(unsigned char xms)
+  16          {
+  17   1          unsigned char x,y;
+  18   1          for(x=xms;x>0;x--)
+  19   1              for(y=110;y>0;y--);
+  20   1      }
+  21          void DHT11_delay_ms(unsigned int n)//—”≥Ÿ
+  22          {
+  23   1         unsigned int i,j;
+  24   1         for(i=n;i>0;i--)
+  25   1            for(j=110;j>0;j--);
+  26   1      }
+  27          void Delay_DHT11_40us()         //@12.000MHz
+  28          {
+  29   1              unsigned char i;
+  30   1      
+  31   1              _nop_();    //÷‹∆⁄1/12ŒªuS£¨¿˚”√nop÷ª–Ë“™0.15uS°£∂Ã‘›——” ±
+  32   1              i = 12;
+  33   1              while (--i);
+  34   1      }
+  35          void Delay_DHT11_30us()         //@12.000MHz
+  36          {
+  37   1              unsigned char i;
+  38   1      
+  39   1              _nop_();
+  40   1              i = 12;
+  41   1              while (--i);
+  42   1      }
+  43          
+  44          void wr_com(unsigned char comm) 
+  45          {
+  46   1         E=0;
+  47   1         RS=0;
+  48   1         RW=0;
+  49   1               LCD_DATA=comm;
+  50   1               delay(5);
+  51   1         E=1;   
+  52   1         E=0;
+  53   1      }
+  54          void wr_data(unsigned char dat)
+C51 COMPILER V9.57.0.0   WENSHIDU                                                          06/14/2023 17:14:22 PAGE 2   
+
+  55          {
+  56   1         E=0;
+  57   1         RW=0;
+  58   1         RS=1; 
+  59   1         LCD_DATA=dat;
+  60   1               delay(5);
+  61   1               E=1;   
+  62   1         E=0;
+  63   1      }
+  64          unsigned char rd_bf(void)
+  65          {
+  66   1         unsigned char bflag;
+  67   1         E=0;
+  68   1         RS=0;
+  69   1         RW=1;
+  70   1         bflag=LCD_DATA&0x80;
+  71   1               E=1;   
+  72   1         E=0;
+  73   1         return(bflag);
+  74   1      }
+  75          void Init_1602() 
+  76          {
+  77   1         wr_com(0x38);
+  78   1         delay(5);
+  79   1         wr_com(0x01);
+  80   1         delay(5);
+  81   1         wr_com(0x06);
+  82   1         delay(5);
+  83   1         wr_com(0x38);
+  84   1         delay(5);
+  85   1         wr_com(0x0c);
+  86   1               delay(5);
+  87   1      }
+  88          void Display_1602()
+  89          {
+  90   1         unsigned char i;
+  91   1         wr_com(0x80+0x05); //µ⁄“ª––œ‘ æ
+  92   1         delay(5);   
+  93   1               for(i=0;i<16;i++)
+  94   1               {
+  95   2                              wr_data(line1[i]); 
+  96   2                              delay(5);
+  97   2                        while(rd_bf());    
+  98   2               }
+  99   1               wr_com(0xc0+0x05); //µ⁄∂˛––œ‘ æ 
+ 100   1               delay(5); 
+ 101   1               for(i=0;i<16;i++)
+ 102   1               {
+ 103   2                              wr_data(line2[i]);
+ 104   2                              delay(5);       
+ 105   2               }
+ 106   1      }
+ 107          
+ 108          void DHT11_start()
+ 109          {
+ 110   1         Data=1;   
+ 111   1         Data=0;
+ 112   1         DHT11_delay_ms(25);   //¿≠∏ﬂ∫Û—”≥Ÿ
+ 113   1         Data=1;
+ 114   1         Delay_DHT11_30us();    
+ 115   1      }
+ 116          unsigned char DHT11_rec_byte()      //Ω” ‹“ª∏ˆ◊÷Ω⁄
+C51 COMPILER V9.57.0.0   WENSHIDU                                                          06/14/2023 17:14:22 PAGE 3   
+
+ 117          {
+ 118   1         unsigned char i,dat=0;
+ 119   1        for(i=0;i<8;i++)    
+ 120   1         {         
+ 121   2            while(Data==0);  
+ 122   2                              Delay_DHT11_40us();
+ 123   2                              dat=_crol_(dat,1);               
+ 124   2            if(Data==1)
+ 125   2                              {
+ 126   3                                      dat|=1;
+ 127   3                                      while(Data==1);
+ 128   3                              }         
+ 129   2             
+ 130   2          }  
+ 131   1          return dat;
+ 132   1      }
+ 133          void DHT11_receive() //Ω” ’Œ¬ ™∂» ˝æ›    
+ 134          {
+ 135   1          unsigned char R_H,R_L,T_H,T_L,RH,RL,TH,TL,revise;
+ 136   1          DHT11_start();
+ 137   1          if(Data==0)       
+ 138   1          {
+ 139   2              while(Data==0);   //µ»¥˝¿≠∏ﬂ     
+ 140   2              while(Data==1);         
+ 141   2              R_H=DHT11_rec_byte();    //Ω” ‹Œ¬∂»∏ﬂ∞ÀŒª  
+ 142   2              R_L=DHT11_rec_byte();    //Ω” ’Œ¬∂»µÕ∞ÀŒª  
+ 143   2              T_H=DHT11_rec_byte();    //Ω” ’Œ¬∂»∏ﬂ∞ÀŒª  
+ 144   2              T_L=DHT11_rec_byte();    //Ω” ’Œ¬∂»µÕ∞ÀŒª
+ 145   2              revise=DHT11_rec_byte(); //Ω” ’–£’˝Œª
+ 146   2      
+ 147   2              Delay_DHT11_40us();    //Ω· ¯
+ 148   2      
+ 149   2              if((R_H+R_L+T_H+T_L)==revise)      //–£’˝
+ 150   2              {
+ 151   3                  RH=R_H;
+ 152   3                  RL=R_L;
+ 153   3                  TH=T_H;
+ 154   3                  TL=T_L;
+ 155   3              }// ˝æ›¥¶¿Ì∑Ω±„œ‘ æ
+ 156   2                                      line2[1]=tab[(RH/10)];
+ 157   2                                      line2[2]=tab[(RH%10)];
+ 158   2                                      line2[6]=tab[(TH/10)];
+ 159   2                                      line2[7]=tab[(TH%10)];
+ 160   2                                      line2[8]=0xDF;
+ 161   2          }
+ 162   1      }
+ 163          
+ 164          void main()   
+ 165          {   
+ 166   1              Init_1602();
+ 167   1              Display_1602();
+ 168   1        DHT11_delay_ms(1000);
+ 169   1              while(1)   
+ 170   1              {   
+ 171   2                      DHT11_receive();
+ 172   2                      Display_1602();
+ 173   2              }       
+ 174   1      }   
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    407    ----
+C51 COMPILER V9.57.0.0   WENSHIDU                                                          06/14/2023 17:14:22 PAGE 4   
+
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     42       6
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

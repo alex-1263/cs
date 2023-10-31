@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\ÃÜÂëËø.obj" 
+TO ".\Objects\mimasuo" 
+PRINT(".\Listings\mimasuo.m51") RAMSIZE(256) 

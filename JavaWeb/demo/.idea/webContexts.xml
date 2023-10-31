@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/ch2_1/jsp/login.jsp" value="file://$PROJECT_DIR$/src/main/webapp/ch2_1/jsp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/doRegister.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/register.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp" />
+      </map>
+    </option>
+  </component>
+</project>

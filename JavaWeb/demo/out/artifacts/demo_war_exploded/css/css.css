@@ -1,0 +1,77 @@
+* { margin: 0; padding: 0;}
+body { font-family: ����, Arial, Helvetica, sans-serif; background-color: #D4D4D4; text-align: center; min-width: 800px; }
+p, li { font-size: 1.1em; }
+#branding { height: 200px;  padding: 20px;  background-image: url(../images/banner.png); }
+#branding h1 { margin: 0; color: #FFFFFF; }
+#mainNav { list-style: none; }
+#secondaryContent h2 { font-size: 1.6em; line-height:50px;margin: 0; }
+#secondaryContent p { font-size: 1em; line-height:23px;padding-right:20px;}
+#footer { clear:both; background-color: #438BF9; padding: 1px 20px;text-align:center; }
+#wrapper { width: 85%; margin: 0 auto; text-align: left; background: #fff;  }
+#mainNav { width: 20%; float: left; padding-left: 20px;  }
+#mainNav li {line-height:40px;	background-position:5px 10px;	padding-left: 20px;}
+#content { width: 75%; float: right; }
+#mainContent { width: 66%; margin: 0; float: left; }
+#mainContent li{ line-height:40px;	padding-left: 20px; }
+#secondaryContent { width: 31%; min-width: 10em; display: inline; float: right; }
+#mainContent, #mainNav, #secondaryContent { padding-top: 20px; padding-bottom: 20px; }
+#mainNav*, #secondaryContent* { padding-left: 20px; padding-right: 20px; }
+#mainNav**, #secondaryContent** { padding-left: 0; padding-right: 0; } 
+
+.text-box
+{
+	position:relative;
+	width:584px;
+	margin-right:8px;
+	margin-left:auto;
+	margin-bottom:10px;
+	background-image:url(../images/main-text-bg.png);
+	background-position:-584px 0;
+	background-repeat:repeat-y;
+}
+.text-box-tbg
+{
+	background-image:url(../images/main-text-bg.png);
+	background-position:0 top;
+	background-repeat:no-repeat;
+}
+.text-box-bbg
+{
+	background-image:url(../images/main-text-bg.png);
+	background-position:-1168px bottom;
+	background-repeat:no-repeat;
+	padding:16px;
+}
+.article-box
+{
+	width:540px;
+	margin:0px auto 20px auto;
+	padding-top:30px;
+}
+.article-box h2
+{
+	text-align:center;
+}
+.source-bar
+{
+	height:30px;
+	line-height:30px;
+	text-align:center;
+}
+.article-content
+{
+	font-size:12px;
+	line-height:23px;
+}
+.article-summary
+{
+	color:#9a9a9a;
+	line-height:25px;
+	display:block;
+	border:1px solid #f0f0f0;
+	padding:5px 8px;
+}
+.article-content p
+{
+	text-indent:2em;
+}

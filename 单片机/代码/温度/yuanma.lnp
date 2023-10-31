@@ -1,0 +1,4 @@
+"STARTUP.obj",
+"ym.obj" 
+TO "yuanma" 
+RAMSIZE(256) 

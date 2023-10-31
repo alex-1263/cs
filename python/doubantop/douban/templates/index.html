@@ -1,0 +1,128 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>豆瓣电影可视化大屏</title>
+    <script type="text/javascript" src="{% static 'js/jquery.js'%}"></script>
+    <script
+      type="text/javascript"
+      src="{% static 'js/echarts.min.js'%}"
+    ></script>
+    <link rel="stylesheet" href="{% static 'css/comon0.css'%}" />
+  </head>
+  <body>
+    <div class="loading">
+      <div class="loadbox">
+        <img src="{% static 'images/loading.gif'%}" /> 页面加载中...
+      </div>
+    </div>
+    <div class="canvas">
+      <canvas width="100%" height="100%"></canvas>
+    </div>
+
+    <div class="head">
+      <h1><a href="#">豆瓣电影250TOP系统分析可视化大屏</a></h1>
+    </div>
+    <div class="mainbox">
+      <div class="topnav">
+        <ul class="clearfix">
+          <li>
+            <div class="boxall">
+              <div class="tit01">电影语言排行</div>
+              <!-- 第一模块存放处 -->
+              <div class="boxnav nav03" id="echart1"></div>
+            </div>
+          </li>
+          <li>
+            <div class="boxall" style="padding: 0">
+              <div
+                class="boxnav"
+                style="height: 100%; display: flex; align-items: center"
+              >
+                <ul class="zjyl">
+                  <li>
+                    <i>496<em>条</em></i
+                    ><span>评分表数据</span>
+                  </li>
+                  <li>
+                    <i>500<em>条</em></i
+                    ><span>电影时长表数据</span>
+                  </li>
+                  <li>
+                    <i>250<em>条</em></i
+                    ><span>年份表数据</span>
+                  </li>
+                  <li>
+                    <i>249<em>条</em></i
+                    ><span>语言表数据</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="boxfoot"></div>
+            </div>
+          </li>
+          <li>
+            <div class="boxall" style="padding: 0">
+              <div class="tit01">电影分类</div>
+              <div class="boxnav nav03" id="echart2"></div>
+              <div class="boxfoot"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="" style="height: calc(50% - 0.25rem)">
+        <ul class="ulheight">
+          <li>
+            <div class="boxall">
+              <div class="tit01">每年电影数量最多(前10)</div>
+              <div class="boxnav nav03" id="echart3"></div>
+              <div class="boxfoot"></div>
+            </div>
+          </li>
+          <li>
+            <div class="boxall">
+              <div class="tit01">电影时常排场最多(前10)</div>
+              <div class="boxnav nav03" id="echart4"></div>
+              <div class="boxfoot"></div>
+            </div>
+          </li>
+          <li>
+            <div class="boxall">
+              <div class="tit01">电影推荐指数</div>
+              <div class="boxnav nav03">
+                <div class="listhead">
+                  <span>电影名字</span>
+                  <span>评分</span>
+                </div>
+                <div class="listnav scrollDiv">
+                 {% for obj in data %}
+                  <ul>
+                    <li>
+                      <span>{{obj.0}}</span>
+                      <span>{{obj.1}}</span>
+                    </li>                    
+                  </ul>
+                  {% endfor %}
+                </div>
+              </div>
+              <div class="boxfoot"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script language="JavaScript" src="{% static 'js/js.js'%}"></script>
+    <script
+      type="text/javascript"
+      src="{% static 'js/jquery.countup.min.js'%}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'js/jquery.waypoints.min.js'%}"
+    ></script>
+    <script src="{% static 'js/jquery.liMarquee.js'%}"></script>
+  </body>
+</html>

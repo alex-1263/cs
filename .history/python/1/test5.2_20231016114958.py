@@ -1,0 +1,1 @@
+text=open("D:/Document/cs/python/1/data.txt")

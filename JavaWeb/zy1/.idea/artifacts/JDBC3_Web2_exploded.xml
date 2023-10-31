@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JDBC3:Web2 exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JDBC3_Web2_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes" />
+      </element>
+    </root>
+  </artifact>
+</component>

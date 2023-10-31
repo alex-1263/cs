@@ -1,0 +1,179 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+.top img{
+			display: inline-block; 
+			vertical-align: middle;
+			}
+ul{
+	list-style-type: none;
+	}
+.menu li{
+			float: left;
+			}
+
+a{
+	text-decoration: none;
+	}
+.mb{
+			border: none  !important;
+			}
+.menu li>a{
+	padding: 0 20px;
+	border-right: 0.5px solid #c8dec5;
+	color: #000000;
+}
+#t1{
+	width: 1200px;
+	height: 80px;
+	line-height: 80px;
+}
+#t2{
+	display: flex;
+}
+#t3{
+	margin: 0;
+}
+#t4{
+	margin-right: 0;
+}
+
+#two{
+	background-color: #000000;
+	height: 60px;
+	margin-bottom: 20px;
+}
+#t-t{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 20px;
+}
+#t-t img{
+width: 100%;	
+}
+.dh>li{
+			float: left;
+			line-height: 50px;
+			position: relative
+			}
+.dh>li>a{
+			color: white;
+			padding: 0 50px;
+			}
+
+			
+
+.cd{
+			display: none;
+			position: absolute;	
+			}
+.dh>li:hover{
+  background-color: aquamarine;
+}
+.cd li>a{
+				color: blanchedalmond;
+				padding: 0 50px;
+			}
+.dh>li:hover .cd{
+			background-color: #DEB887;
+			text-align: center;
+			display: block
+			 }
+.cd li:hover{
+				background-color: #acacac;
+			 }
+
+			
+.ffht1{
+			margin: 0;
+			margin-right: 20px;
+			}
+.ffht1 ul li a{
+				display: block;
+				height: 50px;
+				background-color: #f2f2f2;
+				margin-bottom: 4px;
+				line-height: 50px;
+				text-align: center;
+				color: #000000;
+			}
+.ffht{
+				margin: 0;
+			}
+.ffht table{
+				border-collapse: collapse;
+			}
+.ffht table th{
+				border-top: 2px solid black;
+				height: 40px;
+			}
+.ffht table td{
+				border-bottom: 1px solid #A9A9A9;
+				height: 30px;
+			}
+			/*设置奇数行颜色*/
+.ffht table tr:nth-child(odd)
+			{
+			background: #f2f2f2;
+			}
+			/*设置偶数行颜色*/
+.ffht table tr:nth-child(even)
+			{
+			background: white;
+			}
+			
+			
+			
+			
+#there{
+	width: 1100px;
+	margin-bottom: 30px;
+}
+#there2{
+	display: flex;
+}
+#there3{
+	background-color: #f2f2f2;
+	padding: 30px 0 20px 50px;
+}
+#four{
+	width: 100%;
+}
+#four span{
+	font-size: 25px; 
+	font-weight: bold;
+}
+#four table{
+	text-align: center;
+	width: 100%;
+}
+#six1{
+	width: 1100px;
+}
+#six2{
+	border-bottom:2px solid #b3b3b3 ;
+}
+#six2 span{
+	font-size: 25px; 
+	font-weight: bold;
+}
+#six3{
+	display: flex;margin-top: 20px;
+} 
+#six3 img{
+	border-radius: 50%;
+	width: 250px;
+}
+.ten{
+	text-align: center;
+}
+#good{
+	width: 100%; 
+	background-color: beige;
+	height: 80px;
+	line-height: 100px;
+	 text-align: center;
+	 color: #000000;
+	 margin-top: 40px;
+}

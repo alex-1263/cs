@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="zy1:war exploded2">
+    <output-path>$PROJECT_DIR$/out/artifacts/zy1_war_exploded2</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="zy1" />
+          <element id="library" level="project" name="zy1" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.mysql:mysql-connector-j:8.0.33" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.21.9" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="zy1/web/Web" />
+    </root>
+  </artifact>
+</component>
