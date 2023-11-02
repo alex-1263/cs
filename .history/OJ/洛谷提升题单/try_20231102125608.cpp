@@ -13,6 +13,6 @@ long long dp(long long x){
 }
 
 int main(){
-	cout<< dp(500);
+	
 
 } 
