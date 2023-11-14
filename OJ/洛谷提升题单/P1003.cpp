@@ -1,28 +1,46 @@
-#include<iostream>
-#include<cstdio>
-#include<vector>
+#include <iostream>
+#include <cstdio>
+#include <vector>
 using namespace std;
 
-int map[10005][10005]={0};
+int map[10005][10005] = {0}; // map为地图
 
-int main(){
-int n=0,x1,y1,x2,y2;
-cin>>n;
-for(int i=1;i<=n;i++){
-    cin>>x1>>y1>>x2>>y2;
-    for(int j=x1;j<x1+x2;j++){
-        for(int k=y1;k<y1+y2;k++){
-            map[j][k]=i;
+int main()
+{
+    int n = 0, x1, y1, x2, y2; // n为矩形个数，x1为矩形左下角的横坐标，y1为矩形左下角的纵坐标，x2为矩形的宽度，y2为矩形的高度
+    cin >> n;                  // 输入矩形个数
+    for (int i = 1; i <= n; i++)
+    {                                // 输入矩形的信息
+        cin >> x1 >> y1 >> x2 >> y2; // 输入矩形的信息
+        for (int j = x1; j < x1 + x2; j++)
+        { // 遍历矩形的横坐标
+            for (int k = y1; k < y1 + y2; k++)
+            {                  // 遍历矩形的纵坐标
+                map[j][k] = i; // 将矩形的编号存入地图
+            }
         }
     }
+    cin >> x1 >> y1; // 输入坐标
+    if (map[x1][y1])
+    {                        // 如果坐标上有矩形
+        cout << map[x1][y1]; // 输出矩形的编号
+    }
+    else
+    {                 // 如果坐标上没有矩形
+        cout << "-1"; // 输出-1
+    }
 }
-cin>>x1>>y1;
-if(map[x1][y1]){
-    cout<<map[x1][y1];
-}
-else{
-    cout<<"-1";
-}
-
-
-}
+// 总结：二维数组模拟地图
+// 详细一点的总结：二维数组模拟地图，二维数组的下标代表坐标，二维数组的值代表矩形的编号
+// 比如说，输入：
+// 3
+// 1 1 2 2
+// 2 2 3 3
+// 3 3 4 4
+// 1 1
+// 输出：
+// 1
+// 解释：
+// 1 1 2 2代表矩形1，2 2 3 3代表矩形2，3 3 4 4代表矩形3
+// 1 1代表坐标(1,1)
+// 所以输出1

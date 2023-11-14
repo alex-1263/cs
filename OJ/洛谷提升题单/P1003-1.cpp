@@ -1,32 +1,37 @@
-#include<iostream>
-#include<cstdio>
+#include <iostream>
+#include <cstdio>
 
 using namespace std;
 
+int a[200005] = {0}, b[200005] = {0}, g[200005] = {0}, k[200005] = {0}; // a为矩形左下角的横坐标，b为矩形左下角的纵坐标，g为矩形的宽度，k为矩形的高度
 
-int a[200005]={0},b[200005]={0},g[200005]={0},k[200005]={0};
+int main()
+{
+    int n = 0, x = 0, y = 0, flag = 1; // n为矩形个数，x为横坐标，y为纵坐标，flag为标记
+    cin >> n;                          // 输入矩形个数
 
-
-int main(){
-    int n=0,x=0,y=0,flag=1;
-    cin>>n;
-
-    for(int i=1;i<=n;i++){
-        cin>>a[i]>>b[i]>>g[i]>>k[i];
+    for (int i = 1; i <= n; i++)
+    {                                        // 输入矩形的信息
+        cin >> a[i] >> b[i] >> g[i] >> k[i]; // 输入矩形的信息
     }
-    cin>>x>>y;
-    for(int i=n;i>=1;i--){
-        if(x>=a[i]&&x<=a[i]+g[i]){
-            if(y>=b[i]&&y<=b[i]+k[i]){
-                cout<<i;
-                flag=0;
-                break;
+    cin >> x >> y; // 输入坐标
+    for (int i = n; i >= 1; i--)
+    { // 从后往前遍历矩形
+        if (x >= a[i] && x <= a[i] + g[i])
+        { // 如果横坐标在矩形的横坐标范围内
+            if (y >= b[i] && y <= b[i] + k[i])
+            {              // 如果纵坐标在矩形的纵坐标范围内
+                cout << i; // 输出矩形的编号
+                flag = 0;  // 标记为0
+                break;     // 跳出循环
             }
         }
     }
-    if(flag){
-        cout<<"-1";
+    if (flag)
+    {                 // 如果标记为1
+        cout << "-1"; // 输出-1
     }
 
-    return 0;
+    return 0; // 返回0
 }
+// 总结：模拟，从后往前遍历矩形，如果横坐标在矩形的横坐标范围内，如果纵坐标在矩形的纵坐标范围内，输出矩形的编号
