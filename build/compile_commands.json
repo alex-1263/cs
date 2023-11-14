@@ -1,7 +1,0 @@
-[
-{
-  "directory": "D:/Document/cs/build",
-  "command": "C:\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\test.dir\\main.cpp.obj -c D:\\OneDrive\\Alex\\Document\\cs\\Clion\\test\\main.cpp",
-  "file": "D:/OneDrive/Alex/Document/cs/Clion/test/main.cpp"
-}
-]

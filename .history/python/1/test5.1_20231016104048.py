@@ -1,7 +1,0 @@
-f=open("D:/Document/cs/python/1/try.py","+r",encoding="utf8")
-print(f.closed)
-print(f.mode)
-print(f.name)
-f.close()
-print(f.closed)
-print(f.read())
