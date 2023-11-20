@@ -1,19 +1,26 @@
-#include<iostream>
-#include<cstdio>
+#include <iostream>
+#include <cstdio>
 
 using namespace std;
+/*
+    小鱼最近被要求参加一个数字游戏，要求它把看到的一串数字ai(长度不一定，以0 结束），
+    记住了然后反着念出来（表示结束的数字0就不要念出来了）。这对小鱼的那点记忆力来说实在是太难了，
+    你也不想想小鱼的整个脑袋才多大，其中一部分还是好吃的肉！所以请你帮小鱼编程解决这个问题。
+*/
+long long a[105] = {0}; // 用来存储输入的数字
 
-long long a[105]={0};
-
-int main(){
-    int i;
-    for(i=0;;i++){
-        cin>>a[i];
-        if(a[i]==0)
-        break;
+int main()
+{
+    int i;            // i是循环变量
+    for (i = 0;; i++) // 循环
+    {
+        cin >> a[i];   // 输入
+        if (a[i] == 0) // 如果输入的是0
+            break;     // 结束循环
     }
-    for(int j=i;j>=0;j--){
-        if(a[j]!=0)
-        cout<<a[j]<<" ";
+    for (int j = i; j >= 0; j--)
+    {
+        if (a[j] != 0)           // 如果不是0
+            cout << a[j] << " "; // 输出
     }
 }
