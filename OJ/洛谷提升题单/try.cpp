@@ -1,16 +1,18 @@
-#include<stdio.h>
-int main(){
-	int i,k;
-	double sum=1;
-	scanf("%d",&k);
-	while(true){
-		for(i=2;i<=1000;i++){
-			sum=sum+1.0/i; 
-			if(sum>k){
-				break;
-			}
-		}
-		printf("%d",i);
-		return 0;
+#include<iostream>
+
+using namespace std;
+
+long long dp(long long x){
+	if(x<=2){
+		return 1;
 	}
+	else{
+		long long ans=(dp(x-1)%100000000+dp(x-2)%100000000)%100000000;
+		return ans;
+	}
+}
+
+int main(){
+	cout<< dp(500);
+
 } 
