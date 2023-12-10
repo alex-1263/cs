@@ -3,6 +3,7 @@ package com.edu.servlet;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
@@ -13,7 +14,7 @@ public class Page_jump {
         return "login";
     }
 
-//    @RequestMapping("/login")
+    //    @RequestMapping("/login")
     public String redirectToframePage() {
         return "frame";
     }
@@ -60,13 +61,13 @@ public class Page_jump {
 
     @RequestMapping(value = "/providerModifyPage", method = {RequestMethod.POST, RequestMethod.GET})
     public String providerModify(HttpServletRequest request, String proid) {
-        request.setAttribute("proid",proid);
+        request.setAttribute("proid", proid);
         return "providermodify";
     }
 
     @RequestMapping(value = "/providerViewPage", method = {RequestMethod.POST, RequestMethod.GET})
     public String providerView(HttpServletRequest request, String proid) {
-        request.setAttribute("proid",proid);
+        request.setAttribute("proid", proid);
         return "providerview";
     }
 
@@ -77,13 +78,13 @@ public class Page_jump {
 
     @RequestMapping(value = "/userModifyPage", method = {RequestMethod.POST, RequestMethod.GET})
     public String userModify(HttpServletRequest request, String uid) {
-        request.setAttribute("uid",uid);
+        request.setAttribute("uid", uid);
         return "usermodify";
     }
 
     @RequestMapping(value = "/userViewPage", method = {RequestMethod.POST, RequestMethod.GET})
     public String userView(HttpServletRequest request, String uid) {
-        request.setAttribute("uid",uid);
+        request.setAttribute("uid", uid);
         return "userview";
     }
 }

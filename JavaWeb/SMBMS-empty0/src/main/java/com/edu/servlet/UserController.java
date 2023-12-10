@@ -72,20 +72,21 @@ public class UserController {
         printWriter.flush();
 
     }
+
     @RequestMapping("/getRoleList")
     public void getRoleList(HttpServletResponse response) throws IOException {
         List<Role> roleList = roleService.queryRole();
         String jsonStr = JSONArray.toJSONString(roleList);
-       ConvertUtil.sendJsonnMsg(response,jsonStr);
+        ConvertUtil.sendJsonnMsg(response, jsonStr);
     }
 
     @RequestMapping("/addUser")
-    public String addUser(HttpServletRequest request, User user){
-        User currentUser = (User)request.getSession().getAttribute(Constants.USER_SESSION);
+    public String addUser(HttpServletRequest request, User user) {
+        User currentUser = (User) request.getSession().getAttribute(Constants.USER_SESSION);
         user.setCreatedBy(currentUser.getId());
         user.setCreationDate(new Date());
         int result = userService.inserUser(user);
-        if (result > 0){
+        if (result > 0) {
             return "redirect:/queryUser";
         }
         return "useradd";

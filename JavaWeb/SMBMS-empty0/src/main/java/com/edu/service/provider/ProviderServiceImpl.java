@@ -9,20 +9,22 @@ import java.util.List;
 
 
 @Service
-public class ProviderServiceImpl implements  ProviderService{
+public class ProviderServiceImpl implements ProviderService {
     @Autowired
     ProviderMapper providerMapper;
+
     @Override
-    public List<Provider> queryProvider(){
+    public List<Provider> queryProvider() {
         return providerMapper.queryProvider();
     }
 
     /**
      * 供应商管理
+     *
      * @return
      */
     @Override
-    public List<Provider> suppliermanage(){
+    public List<Provider> suppliermanage() {
         return providerMapper.suppliermanage();
     }
 

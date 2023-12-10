@@ -14,14 +14,15 @@ public class UserServicelmpl implements UserService {
 
     @Autowired
     UserMapper userMapper;
+
     @Override
     public User getUserByCodeAndpwd(String userCode, String password) {
-        return userMapper.getUserByCodeAndpwd(userCode,password);
+        return userMapper.getUserByCodeAndpwd(userCode, password);
     }
 
     @Override
-    public List<User> usermanage(String userName,Integer userRole) {
-        return userMapper.usermanage(userName,userRole);
+    public List<User> usermanage(String userName, Integer userRole) {
+        return userMapper.usermanage(userName, userRole);
     }
 
     @Override

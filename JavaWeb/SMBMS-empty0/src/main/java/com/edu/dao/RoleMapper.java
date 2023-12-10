@@ -6,5 +6,5 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 public interface RoleMapper {
-    public List<Role>queryRole();
+    public List<Role> queryRole();
 }

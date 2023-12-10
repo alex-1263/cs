@@ -6,7 +6,10 @@ import java.util.List;
 
 public interface UserService {
     User getUserByCodeAndpwd(String userCode, String userPassword);
-    public List<User> usermanage(String userName,Integer userRole);
+
+    public List<User> usermanage(String userName, Integer userRole);
+
     User getUserByCode(String userCode);
+
     int inserUser(User user);
 }

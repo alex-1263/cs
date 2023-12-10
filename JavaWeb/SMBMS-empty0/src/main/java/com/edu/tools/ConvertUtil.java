@@ -7,14 +7,16 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class ConvertUtil {
-    public  static void sendJsonnMsg(HttpServletResponse response, String message) throws IOException {
+    public static void sendJsonnMsg(HttpServletResponse response, String message) throws IOException {
         response.setContentType("application/json");
         PrintWriter printWriter = response.getWriter();
         printWriter.write(message);
         printWriter.flush();
     }
+
     /**
      * 根据生日计算年龄
+     *
      * @param birthDate
      * @return
      */

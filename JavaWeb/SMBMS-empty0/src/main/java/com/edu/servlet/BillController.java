@@ -53,7 +53,7 @@ public class BillController {
 
     @RequestMapping("addBill")
 //        public String addBill(HttpServletResponse response, HttpServletRequest request,String billCode,String productName,String productUnit,Double productCount,Double totalPrice,Integer providerId,Integer isPayment) throws IOException, ServletException {
-    public String addBill(HttpServletResponse response, HttpServletRequest request,Bill bill) throws IOException, ServletException {
+    public String addBill(HttpServletResponse response, HttpServletRequest request, Bill bill) throws IOException, ServletException {
 
 //        Bill bill = new Bill();
 //        bill.setBillCode(billCode);
@@ -81,11 +81,12 @@ public class BillController {
         }
         return "billadd";
     }
+
     @RequestMapping("/getBillById")
-    public void getBillById(HttpServletResponse response,String id) throws IOException {
+    public void getBillById(HttpServletResponse response, String id) throws IOException {
         Bill bill = billService.getBillById(id);
-        String jsonStr=JSONArray.toJSONString(bill);
-        ConvertUtil.sendJsonnMsg(response,jsonStr);
+        String jsonStr = JSONArray.toJSONString(bill);
+        ConvertUtil.sendJsonnMsg(response, jsonStr);
     }
 
 
@@ -101,13 +102,14 @@ public class BillController {
         request.setAttribute("providerList", providerList);
         return "providerlist";
     }
+
     @RequestMapping("/billModify")
-    public String modifyBill(HttpServletRequest request,Bill bill){
+    public String modifyBill(HttpServletRequest request, Bill bill) {
         User loginedUser = (User) request.getSession().getAttribute(Constants.USER_SESSION);
         bill.setModifyBy(loginedUser.getId());
         bill.setModifyDate(new Date());
-        int result=billService.modifyBill(bill);
-        if (result > 0){
+        int result = billService.modifyBill(bill);
+        if (result > 0) {
             return "redirevt:/queryBill";
 
         }

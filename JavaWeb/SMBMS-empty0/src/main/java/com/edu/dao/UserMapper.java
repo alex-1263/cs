@@ -9,7 +9,9 @@ import java.util.List;
 public interface UserMapper {
     User getUserByCodeAndpwd(@Param("userCode") String userCode, @Param("password") String password);
 
-    public List<User> usermanage(@Param("userName") String userName,@Param("userRole") Integer userRole);
+    public List<User> usermanage(@Param("userName") String userName, @Param("userRole") Integer userRole);
+
     User getUserByCode(String userCode);
+
     int addUser(User user);
 }

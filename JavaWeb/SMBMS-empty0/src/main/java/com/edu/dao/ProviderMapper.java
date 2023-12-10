@@ -9,6 +9,7 @@ public interface ProviderMapper {
 
     /**
      * 供应商管理
+     *
      * @return
      */
     public List<Provider> suppliermanage();

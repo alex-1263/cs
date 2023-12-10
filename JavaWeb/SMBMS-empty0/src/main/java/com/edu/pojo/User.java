@@ -6,141 +6,142 @@ import org.springframework.format.annotation.DateTimeFormat;
 import java.util.Date;
 
 public class User {
-     private Integer  id;
-     private String       userCode;
-     private String       userName;
-     private String userPassword;
-     private Integer       gender;
-     @DateTimeFormat(pattern = "yyyy-mm-dd")
-     private Date      birthday ;
-     private String       phone ;
-     private String       address ;
-     private Integer       userRole ;
-     private Integer      createdBy ;
-     private Date       creationDate;
-     private Integer       modifyBy;
-     private String roleName;
-     private Integer age;
+    private Integer id;
+    private String userCode;
+    private String userName;
+    private String userPassword;
+    private Integer gender;
+    @DateTimeFormat(pattern = "yyyy-mm-dd")
+    private Date birthday;
+    private String phone;
+    private String address;
+    private Integer userRole;
+    private Integer createdBy;
+    private Date creationDate;
+    private Integer modifyBy;
+    private String roleName;
+    private Integer age;
 
-     public Integer getAge() {
+    public Integer getAge() {
 
-          return ConvertUtil.getAge(birthday);
-     }
+        return ConvertUtil.getAge(birthday);
+    }
 
-     public void setAge(Integer age) {
-          this.age = age;
-     }
+    public void setAge(Integer age) {
+        this.age = age;
+    }
 
-     private Date    modifyDate;
-     public Integer getId() {
-          return id;
-     }
+    private Date modifyDate;
 
-     public void setId(Integer id) {
-          this.id = id;
-     }
+    public Integer getId() {
+        return id;
+    }
 
-     public String getUserCode() {
-          return userCode;
-     }
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-     public void setUserCode(String userCode) {
-          this.userCode = userCode;
-     }
+    public String getUserCode() {
+        return userCode;
+    }
 
-     public String getUserName() {
-          return userName;
-     }
+    public void setUserCode(String userCode) {
+        this.userCode = userCode;
+    }
 
-     public void setUserName(String userName) {
-          this.userName = userName;
-     }
+    public String getUserName() {
+        return userName;
+    }
 
-     public String getUserPassword() {
-          return userPassword;
-     }
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 
-     public void setUserPassword(String userPassword) {
-          this.userPassword = userPassword;
-     }
+    public String getUserPassword() {
+        return userPassword;
+    }
 
-     public Integer getGender() {
-          return gender;
-     }
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
+    }
 
-     public void setGender(Integer gender) {
-          this.gender = gender;
-     }
+    public Integer getGender() {
+        return gender;
+    }
 
-     public Date getBirthday() {
-          return birthday;
-     }
+    public void setGender(Integer gender) {
+        this.gender = gender;
+    }
 
-     public void setBirthday(Date birthday) {
-          this.birthday = birthday;
-     }
+    public Date getBirthday() {
+        return birthday;
+    }
 
-     public String getPhone() {
-          return phone;
-     }
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
 
-     public void setPhone(String phone) {
-          this.phone = phone;
-     }
+    public String getPhone() {
+        return phone;
+    }
 
-     public String getAddress() {
-          return address;
-     }
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
-     public void setAddress(String address) {
-          this.address = address;
-     }
+    public String getAddress() {
+        return address;
+    }
 
-     public Integer getUserRole() {
-          return userRole;
-     }
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
-     public void setUserRole(Integer userRole) {
-          this.userRole = userRole;
-     }
+    public Integer getUserRole() {
+        return userRole;
+    }
 
-     public Integer getCreatedBy() {
-          return createdBy;
-     }
+    public void setUserRole(Integer userRole) {
+        this.userRole = userRole;
+    }
 
-     public void setCreatedBy(Integer createdBy) {
-          this.createdBy = createdBy;
-     }
+    public Integer getCreatedBy() {
+        return createdBy;
+    }
 
-     public Date getCreationDate() {
-          return creationDate;
-     }
+    public void setCreatedBy(Integer createdBy) {
+        this.createdBy = createdBy;
+    }
 
-     public void setCreationDate(Date creationDate) {
-          this.creationDate = creationDate;
-     }
+    public Date getCreationDate() {
+        return creationDate;
+    }
 
-     public Integer getModifyBy() {
-          return modifyBy;
-     }
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
+    }
 
-     public void setModifyBy(Integer modifyBy) {
-          this.modifyBy = modifyBy;
-     }
+    public Integer getModifyBy() {
+        return modifyBy;
+    }
 
-     public Date getModifyDate() {
-          return modifyDate;
-     }
+    public void setModifyBy(Integer modifyBy) {
+        this.modifyBy = modifyBy;
+    }
 
-     public void setModifyDate(Date modifyDate) {
-          this.modifyDate = modifyDate;
-     }
+    public Date getModifyDate() {
+        return modifyDate;
+    }
 
-     public String getRoleName() {
-          return roleName;
-     }
+    public void setModifyDate(Date modifyDate) {
+        this.modifyDate = modifyDate;
+    }
 
-     public void setRoleName(String roleName) {
-          this.roleName = roleName;
-     }
+    public String getRoleName() {
+        return roleName;
+    }
+
+    public void setRoleName(String roleName) {
+        this.roleName = roleName;
+    }
 }

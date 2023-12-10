@@ -15,21 +15,22 @@ import java.util.Arrays;
  */
 @Aspect
 public class ServiceLogger {
-	private static final Logger log = LoggerFactory.getLogger(ServiceLogger.class);
-	
-	@Pointcut("execution(* com.edu.service..*(..))")
-	public void pointcut() {}
+    private static final Logger log = LoggerFactory.getLogger(ServiceLogger.class);
 
-	@Before("pointcut()")
-	public void before(JoinPoint jp) {
-		log.info("调用 " + jp.getTarget() + " 的 " + jp.getSignature().getName()
-				+ " 方法。方法入参：" + Arrays.toString(jp.getArgs())+"           前置增强");
-	}
+    @Pointcut("execution(* com.edu.service..*(..))")
+    public void pointcut() {
+    }
 
-	@AfterReturning(pointcut = "pointcut()", returning = "returnValue")
-	public void afterReturning(JoinPoint jp, Object returnValue) {
-		log.info("调用 " + jp.getTarget() + " 的 " + jp.getSignature().getName()
-				+ " 方法。方法返回值：" + returnValue+"           后置增强");
-	}
+    @Before("pointcut()")
+    public void before(JoinPoint jp) {
+        log.info("调用 " + jp.getTarget() + " 的 " + jp.getSignature().getName()
+                + " 方法。方法入参：" + Arrays.toString(jp.getArgs()) + "           前置增强");
+    }
+
+    @AfterReturning(pointcut = "pointcut()", returning = "returnValue")
+    public void afterReturning(JoinPoint jp, Object returnValue) {
+        log.info("调用 " + jp.getTarget() + " 的 " + jp.getSignature().getName()
+                + " 方法。方法返回值：" + returnValue + "           后置增强");
+    }
 
 }

@@ -11,11 +11,11 @@ import org.slf4j.LoggerFactory;
  */
 @Aspect
 public class AfterLogger {
-	private static final Logger log = LoggerFactory.getLogger(AfterLogger.class);
+    private static final Logger log = LoggerFactory.getLogger(AfterLogger.class);
 
-	@After("execution(* com.edu.servlet..*(..))")
-	public void afterLogger(JoinPoint jp) {
-		log.info(jp.getSignature().getName() + " 环绕增强      方法结束执行。");
-	}
+    @After("execution(* com.edu.servlet..*(..))")
+    public void afterLogger(JoinPoint jp) {
+        log.info(jp.getSignature().getName() + " 环绕增强      方法结束执行。");
+    }
 
 }
