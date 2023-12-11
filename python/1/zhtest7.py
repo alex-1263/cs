@@ -19,8 +19,29 @@ def on_login_button_click():
 
     if check_login(entered_username, entered_password):
         # 登录成功，创建新界面
-        welcome_message = f"欢迎 {entered_username} 用户进入系统"
-        messagebox.showinfo("登录成功", welcome_message)
+        messagebox.showinfo("登录成功", "欢迎使用本系统")
+        # 跳转新窗口,并创建新窗口,并设置窗口大小
+        root.destroy()
+        root1 = tk.Tk()
+        root1.title("系统界面")
+        root1.geometry("400x300")
+        # 添加标签
+        label = tk.Label(root1, text="欢迎使用本系统")
+        #欢迎xx用户
+        label1 = tk.Label(root1, text="欢迎"+entered_username+"用户")
+        label1.pack()
+        label.pack()
+        # 添加按钮
+        button = tk.Button(root1, text="退出", command=root1.destroy)
+        button.pack()
+        
+        # 运行主循环
+        root1.mainloop()
+
+
+
+
+
     else:
         # 登录失败，显示错误提示
         messagebox.showerror("登录失败", "用户名或密码错误")
