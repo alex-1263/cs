@@ -1,10 +1,9 @@
-import tkinter as tk
-from tkinter import ttk, messagebox
-from db import Database
-from models import Student, Dormitory
+
 import tkinter as tk
 from tkinter import messagebox
-from tkinter import ttk  # 导入ttk
+
+from db import Database
+from models import Student
 
 
 class MainApplication:
