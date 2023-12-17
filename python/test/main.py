@@ -1,17 +1,27 @@
-# 这是一个示例 Python 脚本。
+import tkinter as tk
+from db import Database
+from utils import validate_student_data
 
-# 按 Shift+F10 执行或将其替换为您的代码。
-# 按 双击 Shift 在所有地方搜索类、文件、工具窗口、操作和设置。
-import tkinter
-import tkinter.messagebox
+class MainApplication:
+    def __init__(self, root):
+        self.db = Database()
+        self.setup_ui(root)
 
-def print_hi(name):
-    # 在下面的代码行中使用断点来调试脚本。
-    print(f'Hi, {name}')  # 按 Ctrl+F8 切换断点。
+    def setup_ui(self, root):
+        # 创建UI组件
+        pass
 
+    def add_student(self):
+        # 添加学生
+        pass
 
-# 按间距中的绿色按钮以运行脚本。
-if __name__ == '__main__':
-    print_hi('PyCharm')
+    def delete_student(self):
+        # 删除学生
+        pass
 
-# 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
+    # 其他UI相关的函数
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = MainApplication(root)
+    root.mainloop()
