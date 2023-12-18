@@ -1,38 +1,101 @@
 import pymysql
 from config import DB_CONFIG
+from models import Student
+from db import Database  # 确保从实际代码中导入 Database 类
+
+# 创建 Database 类的实例
+db = Database()
+
+# 创建一个测试学生
+test_student = Student(name="张三", student_id="12345", class_name="A101", dormitory_id="D1")
+
+# 测试添加学生
+success, error_message = db.add_student(test_student)
+if success:
+    print("学生添加成功。")
+else:
+    print(f"添加学生失败。错误信息：{error_message}")
+
+# 测试更新学生信息
+success, error_message = db.update_student("12345", "李四", "B202", "D2")
+if success:
+    print("学生信息更新成功。")
+else:
+    print(f"更新学生信息失败。错误信息：{error_message}")
+
+# 测试按学号或宿舍号查询学生
+query_text = "12345"
+records, error_message = db.query_records(query_text)
+if records:
+    print("找到的学生：")
+    for record in records:
+        print(record)
+else:
+    print(f"查询学生失败。错误信息：{error_message}")
+
+# 测试创建宿舍
+success, error_message = db.create_dormitory("D103", 5)
+if success:
+    print("宿舍创建成功。")
+else:
+    print(f"创建宿舍失败。错误信息：{error_message}")
+
+# 测试查询所有宿舍
+dormitories, error_message = db.query_dormitories()
+if dormitories:
+    print("所有宿舍：")
+    for dormitory in dormitories:
+        print(dormitory)
+else:
+    print(f"查询宿舍失败。错误信息：{error_message}")
 
 
-def query_students_by_name(name):
-    try:
-        # 建立数据库连接
-        conn = pymysql.connect(**DB_CONFIG)
+# 测试查询空闲宿舍
+vacant_dormitories, error_message = db.query_vacant_dormitories()
+if vacant_dormitories:
+    print("空闲宿舍：")
+    for dormitory in vacant_dormitories:
+        print(dormitory)
+else:
+    print(f"查询空闲宿舍失败。错误信息：{error_message}")
 
-        with conn.cursor() as cursor:
-            # 定义用于按姓名检索学生的SQL查询
-            sql = "SELECT * FROM students WHERE name = %s"
-            cursor.execute(sql, (name,))
+# 测试按班级查询学生
+class_name = "计算机科学与技术1班"
+students_by_class, error_message = db.query_students_by_class(class_name)
+if students_by_class:
+    print(f"{class_name} 班级的学生：")
+    for student in students_by_class:
+        print(student)
+else:
+    print(f"按班级查询学生失败。错误信息：{error_message}")
+# 测试按班级查询学生
+class_name = "11"
+students_by_class, error_message = db.query_students_by_class(class_name)
+if students_by_class:
+    print(f"{class_name} 班级的学生：")
+    for student in students_by_class:
+        print(student)
+else:
+    print(f"按班级查询学生失败。错误信息：{error_message}")
+# 测试按宿舍号查询学生
+dormitory_id = "D1"
+students_by_dormitory, error_message = db.query_students_by_dormitory(dormitory_id)
+if students_by_dormitory:
+    print(f"{dormitory_id} 宿舍的学生：")
+    for student in students_by_dormitory:
+        print(student)
+else:
+    print(f"按宿舍号查询学生失败。错误信息：{error_message}")
 
-            # 获取所有匹配的记录
-            students = cursor.fetchall()
+# 测试按姓名查询学生
+student_name = "王五"
+students_by_name, error_message = db.query_students_by_name(student_name)
+if students_by_name:
+    print(f"姓名为 {student_name} 的学生：")
+    for student in students_by_name:
+        print(student)
+else:
+    print(f"按姓名查询学生失败。错误信息：{error_message}")
 
-            if students:
-                print("匹配的学生：")
-                for student in students:
-                    print(f"学生ID：{student[1]}")
-                    print(f"姓名：{student[0]}")
-                    print(f"班级：{student[2]}")
-                    print(f"宿舍号：{student[3]}")
-            else:
-                print("未找到匹配的学生。")
-    except Exception as e:
-        print(f"发生错误：{e}")
-    finally:
-        # 关闭数据库连接
-        if conn:
-            conn.close()
-
-
-if __name__ == "__main__":
-    # 输入要搜索的学生姓名
-    search_name = input("请输入要搜索的学生姓名：")
-    query_students_by_name(search_name)
+# 关闭数据库连接
+db.close_connection()
