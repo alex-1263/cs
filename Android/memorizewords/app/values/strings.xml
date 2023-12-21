@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Memorize words</string>
+    <string name="first_short">first</string>
+    <string name="first_long">登录</string>
+    <string name="second_short">second</string>
+    <string name="second_long">注册</string>
+    <string name="third_short">third</string>
+    <string name="third_long">忘记密码</string>
+</resources>

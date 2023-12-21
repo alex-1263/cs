@@ -1,101 +1,43 @@
-import pymysql
-from config import DB_CONFIG
-from models import Student
-from db import Database  # 确保从实际代码中导入 Database 类
+import numpy as np
+import pandas as pd
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+import matplotlib.pyplot as plt
 
-# 创建 Database 类的实例
-db = Database()
+# 1. 生成模拟数据
+np.random.seed(42)
+n_samples = 200
+income = np.random.normal(loc=50000, scale=15000, size=n_samples)
+age = np.random.normal(loc=35, scale=10, size=n_samples)
+data = pd.DataFrame({'Income': income, 'Age': age})
 
-# 创建一个测试学生
-test_student = Student(name="张三", student_id="12345", class_name="A101", dormitory_id="D1")
+# 保存数据到 'customer_data.csv' 文件
+data.to_csv('customer_data.csv', index=False)
 
-# 测试添加学生
-success, error_message = db.add_student(test_student)
-if success:
-    print("学生添加成功。")
-else:
-    print(f"添加学生失败。错误信息：{error_message}")
+# 2. 加载数据集
+customer_data = pd.read_csv('customer_data.csv')
 
-# 测试更新学生信息
-success, error_message = db.update_student("12345", "李四", "B202", "D2")
-if success:
-    print("学生信息更新成功。")
-else:
-    print(f"更新学生信息失败。错误信息：{error_message}")
+# 3. 数据预处理
+selected_attributes = customer_data[['Income', 'Age']]
 
-# 测试按学号或宿舍号查询学生
-query_text = "12345"
-records, error_message = db.query_records(query_text)
-if records:
-    print("找到的学生：")
-    for record in records:
-        print(record)
-else:
-    print(f"查询学生失败。错误信息：{error_message}")
+# 4. 标准化数据
+scaler = StandardScaler()
+scaled_data = scaler.fit_transform(selected_attributes)
 
-# 测试创建宿舍
-success, error_message = db.create_dormitory("D103", 5)
-if success:
-    print("宿舍创建成功。")
-else:
-    print(f"创建宿舍失败。错误信息：{error_message}")
+# 5. 使用K-means算法聚类
+k = 3  # 假设分为3个簇
+kmeans = KMeans(n_clusters=k, random_state=42)
+customer_data['Cluster'] = kmeans.fit_predict(scaled_data)
 
-# 测试查询所有宿舍
-dormitories, error_message = db.query_dormitories()
-if dormitories:
-    print("所有宿舍：")
-    for dormitory in dormitories:
-        print(dormitory)
-else:
-    print(f"查询宿舍失败。错误信息：{error_message}")
+# 6. 分析聚类结果
+cluster_centers = pd.DataFrame(scaler.inverse_transform(kmeans.cluster_centers_), columns=['收入', '年龄'])
+print("聚类中心:")
+print(cluster_centers)
 
-
-# 测试查询空闲宿舍
-vacant_dormitories, error_message = db.query_vacant_dormitories()
-if vacant_dormitories:
-    print("空闲宿舍：")
-    for dormitory in vacant_dormitories:
-        print(dormitory)
-else:
-    print(f"查询空闲宿舍失败。错误信息：{error_message}")
-
-# 测试按班级查询学生
-class_name = "计算机科学与技术1班"
-students_by_class, error_message = db.query_students_by_class(class_name)
-if students_by_class:
-    print(f"{class_name} 班级的学生：")
-    for student in students_by_class:
-        print(student)
-else:
-    print(f"按班级查询学生失败。错误信息：{error_message}")
-# 测试按班级查询学生
-class_name = "11"
-students_by_class, error_message = db.query_students_by_class(class_name)
-if students_by_class:
-    print(f"{class_name} 班级的学生：")
-    for student in students_by_class:
-        print(student)
-else:
-    print(f"按班级查询学生失败。错误信息：{error_message}")
-# 测试按宿舍号查询学生
-dormitory_id = "D1"
-students_by_dormitory, error_message = db.query_students_by_dormitory(dormitory_id)
-if students_by_dormitory:
-    print(f"{dormitory_id} 宿舍的学生：")
-    for student in students_by_dormitory:
-        print(student)
-else:
-    print(f"按宿舍号查询学生失败。错误信息：{error_message}")
-
-# 测试按姓名查询学生
-student_name = "王五"
-students_by_name, error_message = db.query_students_by_name(student_name)
-if students_by_name:
-    print(f"姓名为 {student_name} 的学生：")
-    for student in students_by_name:
-        print(student)
-else:
-    print(f"按姓名查询学生失败。错误信息：{error_message}")
-
-# 关闭数据库连接
-db.close_connection()
+# 7. 可视化聚类结果
+plt.scatter(customer_data['Income'], customer_data['Age'], c=customer_data['Cluster'], cmap='viridis')
+plt.scatter(cluster_centers['Income'], cluster_centers['Age'], marker='X', s=200, c='red')
+plt.xlabel('收入')
+plt.ylabel('年龄')
+plt.title('航空公司客户数据的K-means聚类')
+plt.show()
