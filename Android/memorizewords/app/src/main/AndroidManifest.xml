@@ -8,7 +8,7 @@
         android:label="背单词APP"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MemorizeWords">
+        android:theme="@style/Theme.Memorizewords">
         <activity
             android:name=".MainActivity4"
             android:exported="true" />

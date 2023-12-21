@@ -1,4 +1,4 @@
-package com.example.memorizewords;
+package com.example.myapplication;
 
 
 import android.annotation.SuppressLint;
@@ -15,7 +15,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainaActivity extends AppCompatActivity {
     private Button btn_quit;
     @SuppressLint("WrongViewCast")
     @Override
@@ -65,18 +65,16 @@ public class MainActivity extends AppCompatActivity {
 
     @SuppressLint("NonConstantResourceId")
     public void GoQuit(View v) {
-        switch (v.getId()) {
-            case R.id.btn_quit:
-                AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle("确认退出");
-                builder.setMessage("是否确定退出软件？");
-                builder.setPositiveButton("是", (dialog, which) -> {
-                    finish();
-                    System.exit(0);
-                });
-                builder.setNegativeButton("否", null);
-                builder.show();
-                break;
+        if (v.getId() == R.id.btn_quit) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("确认退出");
+            builder.setMessage("是否确定退出软件？");
+            builder.setPositiveButton("是", (dialog, which) -> {
+                finish();
+                System.exit(0);
+            });
+            builder.setNegativeButton("否", null);
+            builder.show();
         }
 
     }
