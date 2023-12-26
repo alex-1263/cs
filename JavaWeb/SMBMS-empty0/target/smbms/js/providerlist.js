@@ -44,44 +44,44 @@ function deleteProvider(obj) {
 }
 
 
-    function openYesOrNoDLG() {
-        $('.zhezhao').css('display', 'block');
-        $('#removeProv').fadeIn();
-    }
+function openYesOrNoDLG() {
+    $('.zhezhao').css('display', 'block');
+    $('#removeProv').fadeIn();
+}
 
-    function cancleBtn() {
-        $('.zhezhao').css('display', 'none');
-        $('#removeProv').fadeOut();
-    }
+function cancleBtn() {
+    $('.zhezhao').css('display', 'none');
+    $('#removeProv').fadeOut();
+}
 
-    function changeDLGContent(contentStr) {
-        var p = $(".removeMain").find("p");
-        p.html(contentStr);
-    }
+function changeDLGContent(contentStr) {
+    var p = $(".removeMain").find("p");
+    p.html(contentStr);
+}
 
-    $(function () {
-        $(".viewProvider").on("click", function () {
-            //将被绑定的元素（a）转换成jquery对象，可以使用jquery方法
-            var obj = $(this);
-            window.location.href = path + "/providerViewPage?proid=" + obj.attr("proid");
-        });
-
-        $(".modifyProvider").on("click", function () {
-            var obj = $(this);
-            window.location.href = path + "/providerModifyPage?proid=" + obj.attr("proid");
-        });
-
-        $('#no').click(function () {
-            cancleBtn();
-        });
-
-        $('#yes').click(function () {
-            deleteProvider(providerObj);
-        });
-
-        $(".deleteProvider").on("click", function () {
-            providerObj = $(this);
-            changeDLGContent("你确定要删除供应商【" + providerObj.attr("proname") + "】吗？");
-            openYesOrNoDLG();
-        });
+$(function () {
+    $(".viewProvider").on("click", function () {
+        //将被绑定的元素（a）转换成jquery对象，可以使用jquery方法
+        var obj = $(this);
+        window.location.href = path + "/providerViewPage?proid=" + obj.attr("proid");
     });
+
+    $(".modifyProvider").on("click", function () {
+        var obj = $(this);
+        window.location.href = path + "/providerModifyPage?proid=" + obj.attr("proid");
+    });
+
+    $('#no').click(function () {
+        cancleBtn();
+    });
+
+    $('#yes').click(function () {
+        deleteProvider(providerObj);
+    });
+
+    $(".deleteProvider").on("click", function () {
+        providerObj = $(this);
+        changeDLGContent("你确定要删除供应商【" + providerObj.attr("proname") + "】吗？");
+        openYesOrNoDLG();
+    });
+});
