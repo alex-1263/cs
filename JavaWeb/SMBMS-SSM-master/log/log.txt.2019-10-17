@@ -1,0 +1,788 @@
+2019-10-17 15:55:38,130-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 15:55:38,130-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 15:55:38,177-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 15:55:38,177-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 15:55:38,177-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 15:55:38,177-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 15:55:38,442-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 15:55:38,769-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 6309079.
+2019-10-17 15:55:38,785-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 15:55:38,832-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 15:55:38,879-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 15:56:12,917-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 15:56:12,917-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 15:56:12,963-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 15:56:12,963-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 15:56:12,963-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 15:56:12,963-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 15:56:13,213-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 15:56:13,526-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 6309079.
+2019-10-17 15:56:13,542-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 15:56:13,573-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 15:56:13,620-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 15:59:45,165-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 15:59:45,181-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 15:59:45,212-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 15:59:45,212-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 15:59:45,212-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 15:59:45,212-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 15:59:45,462-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 15:59:45,805-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 6309079.
+2019-10-17 15:59:45,805-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 15:59:45,852-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 15:59:45,898-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 15:59:45,898-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:02:54,101-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:02:54,117-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:02:54,163-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:02:54,163-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:02:54,163-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:02:54,163-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:02:54,413-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:02:54,756-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1766336.
+2019-10-17 16:02:54,756-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:02:54,803-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 16:02:54,834-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:02:54,834-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:06:07,328-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:06:07,328-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:06:07,359-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:06:07,359-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:06:07,359-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:06:07,359-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:06:07,609-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:06:07,999-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1766336.
+2019-10-17 16:06:08,014-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:06:08,061-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 16:06:08,077-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:06:08,092-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:06:08,092-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:06:48,258-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:06:48,258-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:06:48,289-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:06:48,289-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:06:48,289-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:06:48,289-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:06:48,523-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:06:48,851-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1766336.
+2019-10-17 16:06:48,866-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:06:48,913-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 16:06:48,960-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:06:48,960-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:06:48,960-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:06:48,960-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 2(Integer)
+2019-10-17 16:06:48,960-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:06:48,960-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:07:14,300-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:07:14,316-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:07:14,347-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:07:14,347-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:07:14,347-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:07:14,347-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:07:14,581-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:07:14,909-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1766336.
+2019-10-17 16:07:14,909-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:07:14,956-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 16:07:14,987-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:07:14,987-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:07:15,002-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:08:17,467-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:08:17,467-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:08:17,498-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:08:17,498-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:08:17,498-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:08:17,498-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:08:17,748-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:08:18,107-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1766336.
+2019-10-17 16:08:18,107-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:08:18,154-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 16:08:18,200-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:08:18,200-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:08:18,200-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:08:18,200-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 2(Integer)
+2019-10-17 16:08:18,200-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:08:18,216-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:13:52,101-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:13:52,116-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:13:52,148-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:13:52,148-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:13:52,148-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:13:52,148-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:13:52,413-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:13:52,772-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1766336.
+2019-10-17 16:13:52,787-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:13:52,834-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 16:13:52,881-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:13:52,881-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:13:52,881-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:14:58,296-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:14:58,311-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:14:58,343-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:14:58,343-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:14:58,343-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:14:58,343-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:14:58,608-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:14:58,951-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1766336.
+2019-10-17 16:14:58,967-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:14:59,029-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 16:14:59,060-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:14:59,060-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:14:59,060-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:15:28,828-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:15:28,844-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:15:28,891-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:15:28,891-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:15:28,891-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:15:28,891-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:15:29,172-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:15:29,499-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1766336.
+2019-10-17 16:15:29,515-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:15:29,577-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 16:15:29,624-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:15:29,624-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:15:29,624-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:15:44,536-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:15:44,552-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:15:44,583-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:15:44,614-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:15:44,614-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:15:44,614-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:15:44,848-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:15:45,176-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1766336.
+2019-10-17 16:15:45,191-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:15:45,238-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 16:15:45,269-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:15:45,269-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:15:45,269-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:15:45,269-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 2(Integer)
+2019-10-17 16:15:45,269-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:15:45,269-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:16:45,877-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:16:45,892-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:16:45,924-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:16:45,924-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:16:45,924-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:16:45,924-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:16:46,158-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:16:46,485-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1766336.
+2019-10-17 16:16:46,501-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:16:46,532-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 16:16:46,563-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:16:46,563-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:16:46,563-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1af3c0]
+2019-10-17 16:16:46,563-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1766336 to pool.
+2019-10-17 16:16:46,579-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:16:46,579-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 1766336 from pool.
+2019-10-17 16:16:46,579-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:16:46,579-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 16:16:46,579-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:16:46,579-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:19:07,387-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:19:07,402-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:19:07,449-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:19:07,449-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:19:07,449-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:19:07,449-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:19:07,730-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:19:08,058-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1766336.
+2019-10-17 16:19:08,073-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:19:08,120-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 16:19:08,151-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:19:08,151-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:19:08,151-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1af3c0]
+2019-10-17 16:19:08,151-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1766336 to pool.
+2019-10-17 16:19:08,151-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:19:08,151-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 1766336 from pool.
+2019-10-17 16:19:08,151-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:19:08,151-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 16:19:08,151-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:19:08,151-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:19:21,185-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:19:21,201-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:19:21,248-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:19:21,248-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:19:21,248-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:19:21,248-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:19:21,528-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:19:21,872-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1766336.
+2019-10-17 16:19:21,872-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:19:21,934-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 16:19:21,965-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:19:21,965-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:19:21,965-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1af3c0]
+2019-10-17 16:19:21,965-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1766336 to pool.
+2019-10-17 16:19:21,965-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:19:21,965-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 1766336 from pool.
+2019-10-17 16:19:21,981-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:19:21,981-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 16:19:21,981-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:19:21,981-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:21:09,130-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:21:09,145-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:21:09,176-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:21:09,176-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:21:09,176-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:21:09,176-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:21:09,457-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.0
+2019-10-17 16:21:09,473-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:21:09,816-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 12697616.
+2019-10-17 16:21:09,832-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:21:09,878-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 16:21:09,925-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:21:09,925-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:21:09,925-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@c1c010]
+2019-10-17 16:21:09,925-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 12697616 to pool.
+2019-10-17 16:21:09,925-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.5
+2019-10-17 16:21:09,925-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:37:11,640-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:37:11,655-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:37:11,686-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:37:11,686-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:37:11,686-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:37:11,686-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:37:11,936-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.0
+2019-10-17 16:37:11,936-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:37:12,295-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 12697616.
+2019-10-17 16:37:12,310-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:37:12,357-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 2(Integer)
+2019-10-17 16:37:12,388-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:37:12,388-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:37:12,388-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@c1c010]
+2019-10-17 16:37:12,388-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 12697616 to pool.
+2019-10-17 16:37:12,404-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.0
+2019-10-17 16:37:12,404-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:37:12,404-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 12697616 from pool.
+2019-10-17 16:37:12,404-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:37:12,404-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 14(Integer)
+2019-10-17 16:37:12,404-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:37:12,404-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:38:09,145-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:38:09,161-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:38:09,192-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:38:09,192-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:38:09,192-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:38:09,192-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:38:09,426-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.0
+2019-10-17 16:38:09,426-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:38:09,769-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 12697616.
+2019-10-17 16:38:09,785-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:38:09,832-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 2(Integer)
+2019-10-17 16:38:09,879-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:38:09,879-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:38:10,893-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@c1c010]
+2019-10-17 16:38:10,893-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 12697616 to pool.
+2019-10-17 16:38:10,893-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.5
+2019-10-17 16:38:10,893-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:38:26,283-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:38:26,298-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:38:26,329-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:38:26,329-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:38:26,329-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:38:26,329-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:38:26,579-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.0
+2019-10-17 16:38:26,579-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:38:26,922-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 12697616.
+2019-10-17 16:38:26,922-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:38:26,969-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 2(Integer)
+2019-10-17 16:38:27,016-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:38:27,016-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:38:37,031-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@c1c010]
+2019-10-17 16:38:37,031-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 12697616 to pool.
+2019-10-17 16:38:37,031-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.5
+2019-10-17 16:38:37,031-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:44:49,318-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:44:49,333-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:44:49,364-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:44:49,364-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:44:49,364-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:44:49,364-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:44:49,614-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:44:49,988-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 18876548.
+2019-10-17 16:44:49,988-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1200884]
+2019-10-17 16:44:50,004-[TS] DEBUG main dao.ProviderMapper.add - ==>  Preparing: insert into smbms_provider(proCode,proName,proDesc,proContact,proPhone,proAddress,proFax,createdBy,creationDate) values (?,?,?,?,?,?,?,?,?) 
+2019-10-17 16:44:50,066-[TS] DEBUG main dao.ProviderMapper.add - ==> Parameters: beijindaxue(String), 北京大学(String), 可以(String), 张北京(String), 1515432555(String), 北京市 海淀区(String), 1215564456(String), 1(Long), 2019-10-17 16:44:49.598(Timestamp)
+2019-10-17 16:44:50,066-[TS] DEBUG main dao.ProviderMapper.add - <==    Updates: 1
+2019-10-17 16:44:50,066-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1200884]
+2019-10-17 16:44:50,082-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1200884]
+2019-10-17 16:44:50,082-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1200884]
+2019-10-17 16:44:50,082-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 18876548 to pool.
+2019-10-17 16:45:26,930-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:45:26,930-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:45:26,977-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:45:26,977-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:45:26,977-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:45:26,977-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:45:27,226-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.0
+2019-10-17 16:45:27,242-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:45:27,585-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 20374733.
+2019-10-17 16:45:27,585-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,601-[TS] DEBUG main dao.ProviderMapper.getProviderById - ==>  Preparing: select * from smbms_provider WHERE id=? AND proCode=? 
+2019-10-17 16:45:27,647-[TS] DEBUG main dao.ProviderMapper.getProviderById - ==> Parameters: 2(Integer), HB_GYS001(String)
+2019-10-17 16:45:27,679-[TS] DEBUG main dao.ProviderMapper.getProviderById - <==      Total: 1
+2019-10-17 16:45:27,679-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,679-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,679-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 20374733 to pool.
+2019-10-17 16:45:27,679-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:45:27,679-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 20374733 from pool.
+2019-10-17 16:45:27,679-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,679-[TS] DEBUG main dao.ProviderMapper.delete - ==>  Preparing: delete from smbms_provider where id=? 
+2019-10-17 16:45:27,679-[TS] DEBUG main dao.ProviderMapper.delete - ==> Parameters: 17(Long)
+2019-10-17 16:45:27,694-[TS] DEBUG main dao.ProviderMapper.delete - <==    Updates: 0
+2019-10-17 16:45:27,694-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,694-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,694-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,694-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 20374733 to pool.
+2019-10-17 16:45:27,694-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.0
+2019-10-17 16:45:27,694-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:45:27,694-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 20374733 from pool.
+2019-10-17 16:45:27,694-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,694-[TS] DEBUG main dao.ProviderMapper.getAllProvider - ==>  Preparing: select * from smbms_provider 
+2019-10-17 16:45:27,694-[TS] DEBUG main dao.ProviderMapper.getAllProvider - ==> Parameters: 
+2019-10-17 16:45:27,694-[TS] DEBUG main dao.ProviderMapper.getAllProvider - <==      Total: 16
+2019-10-17 16:45:27,694-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,710-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,710-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 20374733 to pool.
+2019-10-17 16:45:27,710-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:45:27,710-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 20374733 from pool.
+2019-10-17 16:45:27,710-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,710-[TS] DEBUG main dao.ProviderMapper.modify - ==>  Preparing: update smbms_provider set proCode=?,proName=?,proAddress=?,modifyDate=?,modifyBy=? where id=? 
+2019-10-17 16:45:27,725-[TS] DEBUG main dao.ProviderMapper.modify - ==> Parameters: binjinchubanshe(String), 北京出版社(String), 北京大学(String), 2019-10-17 16:45:27.71(Timestamp), 1(Long), 16(Long)
+2019-10-17 16:45:27,725-[TS] DEBUG main dao.ProviderMapper.modify - <==    Updates: 1
+2019-10-17 16:45:27,725-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,725-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,725-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,725-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 20374733 to pool.
+2019-10-17 16:45:27,725-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.0
+2019-10-17 16:45:27,725-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:45:27,725-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 20374733 from pool.
+2019-10-17 16:45:27,725-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,725-[TS] DEBUG main dao.ProviderMapper.countProvider - ==>  Preparing: select count(*) from smbms_provider 
+2019-10-17 16:45:27,725-[TS] DEBUG main dao.ProviderMapper.countProvider - ==> Parameters: 
+2019-10-17 16:45:27,741-[TS] DEBUG main dao.ProviderMapper.countProvider - <==      Total: 1
+2019-10-17 16:45:27,741-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,741-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,741-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 20374733 to pool.
+2019-10-17 16:45:27,741-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:45:27,741-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 20374733 from pool.
+2019-10-17 16:45:27,741-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,741-[TS] DEBUG main dao.ProviderMapper.add - ==>  Preparing: insert into smbms_provider(proCode,proName,proDesc,proContact,proPhone,proAddress,proFax,createdBy,creationDate) values (?,?,?,?,?,?,?,?,?) 
+2019-10-17 16:45:27,741-[TS] DEBUG main dao.ProviderMapper.add - ==> Parameters: beijindaxue(String), 北京大学(String), 可以(String), 张北京(String), 1515432555(String), 北京市 海淀区(String), 1215564456(String), 1(Long), 2019-10-17 16:45:27.741(Timestamp)
+2019-10-17 16:45:27,741-[TS] DEBUG main dao.ProviderMapper.add - <==    Updates: 1
+2019-10-17 16:45:27,741-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,741-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,741-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,741-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 20374733 to pool.
+2019-10-17 16:45:27,741-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.0
+2019-10-17 16:45:27,741-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:45:27,741-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 20374733 from pool.
+2019-10-17 16:45:27,741-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,741-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:45:27,741-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 2(Integer)
+2019-10-17 16:45:27,757-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:45:27,757-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:45:27,757-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,757-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:27,757-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 20374733 to pool.
+2019-10-17 16:45:27,757-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.2
+2019-10-17 16:45:27,757-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:45:49,178-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:45:49,194-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:45:49,225-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:45:49,225-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:45:49,225-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:45:49,225-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:45:49,476-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.0
+2019-10-17 16:45:49,491-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:45:49,819-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 20374733.
+2019-10-17 16:45:49,819-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,835-[TS] DEBUG main dao.ProviderMapper.getProviderById - ==>  Preparing: select * from smbms_provider WHERE id=? AND proCode=? 
+2019-10-17 16:45:49,866-[TS] DEBUG main dao.ProviderMapper.getProviderById - ==> Parameters: 2(Integer), HB_GYS001(String)
+2019-10-17 16:45:49,897-[TS] DEBUG main dao.ProviderMapper.getProviderById - <==      Total: 1
+2019-10-17 16:45:49,897-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,897-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,897-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 20374733 to pool.
+2019-10-17 16:45:49,897-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:45:49,897-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 20374733 from pool.
+2019-10-17 16:45:49,897-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,897-[TS] DEBUG main dao.ProviderMapper.delete - ==>  Preparing: delete from smbms_provider where id=? 
+2019-10-17 16:45:49,897-[TS] DEBUG main dao.ProviderMapper.delete - ==> Parameters: 17(Long)
+2019-10-17 16:45:49,897-[TS] DEBUG main dao.ProviderMapper.delete - <==    Updates: 1
+2019-10-17 16:45:49,897-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,913-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,913-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,913-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 20374733 to pool.
+2019-10-17 16:45:49,913-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.0
+2019-10-17 16:45:49,913-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:45:49,913-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 20374733 from pool.
+2019-10-17 16:45:49,913-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,913-[TS] DEBUG main dao.ProviderMapper.getAllProvider - ==>  Preparing: select * from smbms_provider 
+2019-10-17 16:45:49,913-[TS] DEBUG main dao.ProviderMapper.getAllProvider - ==> Parameters: 
+2019-10-17 16:45:49,913-[TS] DEBUG main dao.ProviderMapper.getAllProvider - <==      Total: 16
+2019-10-17 16:45:49,913-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,913-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,913-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 20374733 to pool.
+2019-10-17 16:45:49,913-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:45:49,913-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 20374733 from pool.
+2019-10-17 16:45:49,913-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,913-[TS] DEBUG main dao.ProviderMapper.modify - ==>  Preparing: update smbms_provider set proCode=?,proName=?,proAddress=?,modifyDate=?,modifyBy=? where id=? 
+2019-10-17 16:45:49,928-[TS] DEBUG main dao.ProviderMapper.modify - ==> Parameters: binjinchubanshe(String), 北京出版社(String), 北京大学(String), 2019-10-17 16:45:49.913(Timestamp), 1(Long), 16(Long)
+2019-10-17 16:45:49,928-[TS] DEBUG main dao.ProviderMapper.modify - <==    Updates: 1
+2019-10-17 16:45:49,928-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,944-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,944-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,944-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 20374733 to pool.
+2019-10-17 16:45:49,944-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.0
+2019-10-17 16:45:49,944-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:45:49,944-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 20374733 from pool.
+2019-10-17 16:45:49,944-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,944-[TS] DEBUG main dao.ProviderMapper.countProvider - ==>  Preparing: select count(*) from smbms_provider 
+2019-10-17 16:45:49,944-[TS] DEBUG main dao.ProviderMapper.countProvider - ==> Parameters: 
+2019-10-17 16:45:49,944-[TS] DEBUG main dao.ProviderMapper.countProvider - <==      Total: 1
+2019-10-17 16:45:49,944-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,944-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,944-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 20374733 to pool.
+2019-10-17 16:45:49,944-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:45:49,944-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 20374733 from pool.
+2019-10-17 16:45:49,944-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,944-[TS] DEBUG main dao.ProviderMapper.add - ==>  Preparing: insert into smbms_provider(proCode,proName,proDesc,proContact,proPhone,proAddress,proFax,createdBy,creationDate) values (?,?,?,?,?,?,?,?,?) 
+2019-10-17 16:45:49,959-[TS] DEBUG main dao.ProviderMapper.add - ==> Parameters: beijindaxue(String), 北京大学(String), 可以(String), 张北京(String), 1515432555(String), 北京市 海淀区(String), 1215564456(String), 1(Long), 2019-10-17 16:45:49.944(Timestamp)
+2019-10-17 16:45:49,959-[TS] DEBUG main dao.ProviderMapper.add - <==    Updates: 1
+2019-10-17 16:45:49,959-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,959-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,959-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,959-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 20374733 to pool.
+2019-10-17 16:45:49,959-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.0
+2019-10-17 16:45:49,959-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:45:49,959-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 20374733 from pool.
+2019-10-17 16:45:49,959-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,959-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==>  Preparing: select b.id bid,p.id pid,p.*,b.* from smbms_provider p,smbms_bill b WHERE p.id=? AND b.providerId=p.id 
+2019-10-17 16:45:49,959-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - ==> Parameters: 2(Integer)
+2019-10-17 16:45:49,975-[TS] DEBUG main dao.ProviderMapper.getProviderAndBillListById - <==      Total: 3
+2019-10-17 16:45:49,975-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:45:49,975-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,975-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@136e4cd]
+2019-10-17 16:45:49,975-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 20374733 to pool.
+2019-10-17 16:45:49,975-[TS] DEBUG main dao.ProviderMapper - Cache Hit Ratio [dao.ProviderMapper]: 0.2
+2019-10-17 16:45:49,975-[TS] DEBUG main ProviderMapperTest - billListSize: 3
+2019-10-17 16:47:50,505-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:47:50,505-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:47:50,536-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:47:50,552-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:47:50,552-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:47:50,552-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:47:50,817-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:47:51,191-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 10642370.
+2019-10-17 16:47:51,191-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a263c2]
+2019-10-17 16:47:51,191-[TS] DEBUG main dao.BillMapper.selectBill - ==>  Preparing: select * from smbms_bill as b,smbms_provider as p WHERE b.providerId=? AND b.isPayment=? AND b.providerId=p.id 
+2019-10-17 16:47:51,254-[TS] DEBUG main dao.BillMapper.selectBill - ==> Parameters: 1(String), 2(String)
+2019-10-17 16:47:51,300-[TS] DEBUG main dao.BillMapper.selectBill - <==      Total: 1
+2019-10-17 16:47:51,300-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a263c2]
+2019-10-17 16:47:51,300-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@a263c2]
+2019-10-17 16:47:51,300-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 10642370 to pool.
+2019-10-17 16:49:39,524-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:49:39,539-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:49:39,571-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:49:39,571-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:49:39,571-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:49:39,571-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:49:39,820-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:49:40,179-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 23369823.
+2019-10-17 16:49:40,195-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,195-[TS] DEBUG main dao.UserMapper.deleteUserById - ==>  Preparing: DELETE FROM smbms_user WHERE id=? 
+2019-10-17 16:49:40,241-[TS] DEBUG main dao.UserMapper.deleteUserById - ==> Parameters: 35(Integer)
+2019-10-17 16:49:40,257-[TS] DEBUG main dao.UserMapper.deleteUserById - <==    Updates: 0
+2019-10-17 16:49:40,257-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,257-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,257-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,257-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 16:49:40,257-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:49:40,257-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 23369823 from pool.
+2019-10-17 16:49:40,257-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,257-[TS] DEBUG main dao.UserMapper.getLoginUser - ==>  Preparing: select * from smbms_user WHERE userCode=? 
+2019-10-17 16:49:40,273-[TS] DEBUG main dao.UserMapper.getLoginUser - ==> Parameters: hanlubiao(String)
+2019-10-17 16:49:40,304-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,304-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,304-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 16:49:40,335-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:49:40,335-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 23369823 from pool.
+2019-10-17 16:49:40,335-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,335-[TS] DEBUG main dao.UserMapper.countUser - ==>  Preparing: select count(*) from smbms_user 
+2019-10-17 16:49:40,335-[TS] DEBUG main dao.UserMapper.countUser - ==> Parameters: 
+2019-10-17 16:49:40,335-[TS] DEBUG main dao.UserMapper.countUser - <==      Total: 1
+2019-10-17 16:49:40,335-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,335-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,335-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 16:49:40,382-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:49:40,382-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 23369823 from pool.
+2019-10-17 16:49:40,382-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,397-[TS] DEBUG main dao.UserMapper.modify - ==>  Preparing: update smbms_user SET userName = ? where id = ? 
+2019-10-17 16:49:40,397-[TS] DEBUG main dao.UserMapper.modify - ==> Parameters: 李明(String), 2(Long)
+2019-10-17 16:49:40,397-[TS] DEBUG main dao.UserMapper.modify - <==    Updates: 1
+2019-10-17 16:49:40,397-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,397-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,397-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,397-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 16:49:40,397-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:49:40,397-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 23369823 from pool.
+2019-10-17 16:49:40,397-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,397-[TS] DEBUG main dao.UserMapper.getAllUser - ==>  Preparing: select * from smbms_user 
+2019-10-17 16:49:40,397-[TS] DEBUG main dao.UserMapper.getAllUser - ==> Parameters: 
+2019-10-17 16:49:40,397-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,397-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,397-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 16:49:40,413-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:49:40,413-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 23369823 from pool.
+2019-10-17 16:49:40,413-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,413-[TS] DEBUG main dao.UserMapper.getUserById - ==>  Preparing: select * from smbms_user WHERE id=? 
+2019-10-17 16:49:40,413-[TS] DEBUG main dao.UserMapper.getUserById - ==> Parameters: 2(Integer)
+2019-10-17 16:49:40,413-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,413-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,413-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 16:49:40,429-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:49:40,429-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 23369823 from pool.
+2019-10-17 16:49:40,429-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,429-[TS] DEBUG main dao.UserMapper.getUserList - ==>  Preparing: select * from smbms_user WHERE userRole=? 
+2019-10-17 16:49:40,429-[TS] DEBUG main dao.UserMapper.getUserList - ==> Parameters: 3(Integer)
+2019-10-17 16:49:40,429-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,429-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,444-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 16:49:40,460-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:49:40,460-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 23369823 from pool.
+2019-10-17 16:49:40,460-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,460-[TS] DEBUG main dao.UserMapper.add - ==>  Preparing: insert into smbms_user ( userName ) values ( ? ) 
+2019-10-17 16:49:40,460-[TS] DEBUG main dao.UserMapper.add - ==> Parameters: 李丽思332(String)
+2019-10-17 16:49:40,460-[TS] DEBUG main dao.UserMapper.add - <==    Updates: 1
+2019-10-17 16:49:40,460-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,460-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,460-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,460-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 16:49:40,460-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:49:40,460-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 23369823 from pool.
+2019-10-17 16:49:40,460-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,460-[TS] DEBUG main dao.UserMapper.getUserCount - ==>  Preparing: select count(*) from smbms_user WHERE userRole=? 
+2019-10-17 16:49:40,460-[TS] DEBUG main dao.UserMapper.getUserCount - ==> Parameters: 3(Integer)
+2019-10-17 16:49:40,475-[TS] DEBUG main dao.UserMapper.getUserCount - <==      Total: 1
+2019-10-17 16:49:40,475-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,475-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:49:40,475-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 16:52:27,868-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:52:27,868-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:52:27,915-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:52:27,915-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:52:27,915-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:52:27,915-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:52:28,227-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:52:28,773-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 21481023.
+2019-10-17 16:52:28,773-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@147c63f]
+2019-10-17 16:52:28,773-[TS] DEBUG main dao.BillMapper.selectBill - ==>  Preparing: select * from smbms_bill as b,smbms_provider as p WHERE b.providerId=? AND b.isPayment=? AND b.providerId=p.id 
+2019-10-17 16:52:28,835-[TS] DEBUG main dao.BillMapper.selectBill - ==> Parameters: 1(String), 2(String)
+2019-10-17 16:52:28,866-[TS] DEBUG main dao.BillMapper.selectBill - <==      Total: 1
+2019-10-17 16:52:28,866-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@147c63f]
+2019-10-17 16:52:28,866-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@147c63f]
+2019-10-17 16:52:28,866-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 21481023 to pool.
+2019-10-17 16:52:32,489-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:52:32,489-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:52:32,536-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:52:32,536-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:52:32,536-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:52:32,536-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:52:32,786-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:52:33,145-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 18603047.
+2019-10-17 16:52:33,145-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@11bdc27]
+2019-10-17 16:52:33,145-[TS] DEBUG main dao.RoleMapper.getRoleList - ==>  Preparing: select r.*,u.id as uid,u.* from smbms_role as r,smbms_user as u where u.userRole=r.id 
+2019-10-17 16:52:33,207-[TS] DEBUG main dao.RoleMapper.getRoleList - ==> Parameters: 
+2019-10-17 16:52:33,254-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@11bdc27]
+2019-10-17 16:52:33,254-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@11bdc27]
+2019-10-17 16:52:33,254-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 18603047 to pool.
+2019-10-17 16:53:33,958-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:53:33,958-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:53:33,990-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:53:33,990-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:53:33,990-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:53:33,990-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:53:34,255-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:53:34,629-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 23369823.
+2019-10-17 16:53:34,629-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:53:34,629-[TS] DEBUG main dao.RoleMapper.getRoleList - ==>  Preparing: select r.*,u.id as uid,u.* from smbms_role as r,smbms_user as u where u.userRole=r.id 
+2019-10-17 16:53:34,692-[TS] DEBUG main dao.RoleMapper.getRoleList - ==> Parameters: 
+2019-10-17 16:53:34,723-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:53:34,723-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:53:34,723-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 16:54:31,558-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:54:31,558-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:54:31,605-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:54:31,605-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:54:31,605-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:54:31,605-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:54:31,854-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:54:32,213-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 23369823.
+2019-10-17 16:54:32,213-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:54:32,213-[TS] DEBUG main dao.RoleMapper.getRoleList - ==>  Preparing: select r.*,u.id as uid,u.* from smbms_role as r,smbms_user as u where u.userRole=r.id 
+2019-10-17 16:54:32,260-[TS] DEBUG main dao.RoleMapper.getRoleList - ==> Parameters: 
+2019-10-17 16:54:32,307-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:54:32,307-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:54:32,307-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 16:59:48,757-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 16:59:48,773-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 16:59:48,820-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:59:48,820-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:59:48,820-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:59:48,820-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 16:59:49,069-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 16:59:49,397-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 23369823.
+2019-10-17 16:59:49,397-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:59:49,397-[TS] DEBUG main dao.RoleMapper.getRoleList - ==>  Preparing: select r.*,u.id as uid,u.* from smbms_role as r,smbms_user as u where u.userRole=r.id 
+2019-10-17 16:59:49,444-[TS] DEBUG main dao.RoleMapper.getRoleList - ==> Parameters: 
+2019-10-17 16:59:49,490-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:59:49,490-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 16:59:49,490-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 17:00:42,924-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 17:00:42,924-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 17:00:42,971-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:00:42,971-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:00:42,971-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:00:42,971-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:00:43,221-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 17:00:43,548-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 23369823.
+2019-10-17 17:00:43,548-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:00:43,564-[TS] DEBUG main dao.RoleMapper.getRoleList - ==>  Preparing: select r.*,u.id as uid,u.* from smbms_role as r,smbms_user as u where u.userRole=r.id 
+2019-10-17 17:00:43,626-[TS] DEBUG main dao.RoleMapper.getRoleList - ==> Parameters: 
+2019-10-17 17:00:43,689-[TS] DEBUG main dao.RoleMapper.getRoleList - <==      Total: 12
+2019-10-17 17:00:43,704-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:00:43,704-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:00:43,704-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 17:01:02,305-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 17:01:02,305-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 17:01:02,351-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:01:02,351-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:01:02,351-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:01:02,351-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:01:02,617-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 17:01:02,944-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 23369823.
+2019-10-17 17:01:02,944-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:02,944-[TS] DEBUG main dao.UserMapper.deleteUserById - ==>  Preparing: DELETE FROM smbms_user WHERE id=? 
+2019-10-17 17:01:02,991-[TS] DEBUG main dao.UserMapper.deleteUserById - ==> Parameters: 35(Integer)
+2019-10-17 17:01:03,007-[TS] DEBUG main dao.UserMapper.deleteUserById - <==    Updates: 0
+2019-10-17 17:01:03,007-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,007-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,007-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,007-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 17:01:03,007-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 17:01:03,007-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 23369823 from pool.
+2019-10-17 17:01:03,007-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,007-[TS] DEBUG main dao.UserMapper.getLoginUser - ==>  Preparing: select * from smbms_user WHERE userCode=? 
+2019-10-17 17:01:03,007-[TS] DEBUG main dao.UserMapper.getLoginUser - ==> Parameters: hanlubiao(String)
+2019-10-17 17:01:03,053-[TS] DEBUG main dao.UserMapper.getLoginUser - <==      Total: 1
+2019-10-17 17:01:03,053-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,053-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,053-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 17:01:03,053-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 17:01:03,053-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 23369823 from pool.
+2019-10-17 17:01:03,053-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,053-[TS] DEBUG main dao.UserMapper.countUser - ==>  Preparing: select count(*) from smbms_user 
+2019-10-17 17:01:03,053-[TS] DEBUG main dao.UserMapper.countUser - ==> Parameters: 
+2019-10-17 17:01:03,053-[TS] DEBUG main dao.UserMapper.countUser - <==      Total: 1
+2019-10-17 17:01:03,053-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,053-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,053-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 17:01:03,116-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 17:01:03,116-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 23369823 from pool.
+2019-10-17 17:01:03,116-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,116-[TS] DEBUG main dao.UserMapper.modify - ==>  Preparing: update smbms_user SET userName = ? where id = ? 
+2019-10-17 17:01:03,116-[TS] DEBUG main dao.UserMapper.modify - ==> Parameters: 李明(String), 2(Long)
+2019-10-17 17:01:03,116-[TS] DEBUG main dao.UserMapper.modify - <==    Updates: 1
+2019-10-17 17:01:03,131-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,147-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,147-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,147-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 17:01:03,147-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 17:01:03,147-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 23369823 from pool.
+2019-10-17 17:01:03,147-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,147-[TS] DEBUG main dao.UserMapper.getAllUser - ==>  Preparing: select * from smbms_user 
+2019-10-17 17:01:03,147-[TS] DEBUG main dao.UserMapper.getAllUser - ==> Parameters: 
+2019-10-17 17:01:03,147-[TS] DEBUG main dao.UserMapper.getAllUser - <==      Total: 19
+2019-10-17 17:01:03,147-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,147-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,147-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 17:01:03,147-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 17:01:03,147-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 23369823 from pool.
+2019-10-17 17:01:03,147-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,147-[TS] DEBUG main dao.UserMapper.getUserById - ==>  Preparing: select * from smbms_user WHERE id=? 
+2019-10-17 17:01:03,147-[TS] DEBUG main dao.UserMapper.getUserById - ==> Parameters: 2(Integer)
+2019-10-17 17:01:03,163-[TS] DEBUG main dao.UserMapper.getUserById - <==      Total: 1
+2019-10-17 17:01:03,163-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,163-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,163-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 17:01:03,178-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 17:01:03,178-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 23369823 from pool.
+2019-10-17 17:01:03,178-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,178-[TS] DEBUG main dao.UserMapper.getUserList - ==>  Preparing: select * from smbms_user WHERE userRole=? 
+2019-10-17 17:01:03,178-[TS] DEBUG main dao.UserMapper.getUserList - ==> Parameters: 3(Integer)
+2019-10-17 17:01:03,194-[TS] DEBUG main dao.UserMapper.getUserList - <==      Total: 8
+2019-10-17 17:01:03,209-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,209-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,209-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 17:01:03,209-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 17:01:03,209-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 23369823 from pool.
+2019-10-17 17:01:03,209-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,209-[TS] DEBUG main dao.UserMapper.add - ==>  Preparing: insert into smbms_user ( userName ) values ( ? ) 
+2019-10-17 17:01:03,209-[TS] DEBUG main dao.UserMapper.add - ==> Parameters: 李丽思332(String)
+2019-10-17 17:01:03,209-[TS] DEBUG main dao.UserMapper.add - <==    Updates: 1
+2019-10-17 17:01:03,209-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,225-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,225-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,225-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 17:01:03,225-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 17:01:03,225-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 23369823 from pool.
+2019-10-17 17:01:03,225-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,225-[TS] DEBUG main dao.UserMapper.getUserCount - ==>  Preparing: select count(*) from smbms_user WHERE userRole=? 
+2019-10-17 17:01:03,225-[TS] DEBUG main dao.UserMapper.getUserCount - ==> Parameters: 3(Integer)
+2019-10-17 17:01:03,225-[TS] DEBUG main dao.UserMapper.getUserCount - <==      Total: 1
+2019-10-17 17:01:03,225-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,225-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@164985f]
+2019-10-17 17:01:03,225-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 23369823 to pool.
+2019-10-17 17:02:34,552-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 17:02:34,552-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 17:02:34,598-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:02:34,598-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:02:34,598-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:02:34,598-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:02:34,895-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 17:02:35,207-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 9171730.
+2019-10-17 17:02:35,207-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@8bf312]
+2019-10-17 17:02:35,222-[TS] DEBUG main dao.BillMapper.selectBill - ==>  Preparing: select * from smbms_bill as b,smbms_provider as p WHERE b.productName like CONCAT('%',?,'%') AND b.providerId=? AND b.isPayment=? AND b.providerId=p.id 
+2019-10-17 17:02:35,269-[TS] DEBUG main dao.BillMapper.selectBill - ==> Parameters: 之(String), 1(String), 2(String)
+2019-10-17 17:02:35,300-[TS] DEBUG main dao.BillMapper.selectBill - <==      Total: 0
+2019-10-17 17:02:35,300-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@8bf312]
+2019-10-17 17:02:35,300-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@8bf312]
+2019-10-17 17:02:35,300-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 9171730 to pool.
+2019-10-17 17:02:48,190-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 17:02:48,190-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 17:02:48,237-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:02:48,237-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:02:48,237-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:02:48,237-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:02:48,533-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 17:02:48,861-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 10642370.
+2019-10-17 17:02:48,861-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a263c2]
+2019-10-17 17:02:48,861-[TS] DEBUG main dao.BillMapper.selectBill - ==>  Preparing: select * from smbms_bill as b,smbms_provider as p WHERE b.providerId=? AND b.isPayment=? AND b.providerId=p.id 
+2019-10-17 17:02:48,923-[TS] DEBUG main dao.BillMapper.selectBill - ==> Parameters: 1(String), 2(String)
+2019-10-17 17:02:48,970-[TS] DEBUG main dao.BillMapper.selectBill - <==      Total: 1
+2019-10-17 17:02:48,970-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a263c2]
+2019-10-17 17:02:48,970-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@a263c2]
+2019-10-17 17:02:48,970-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 10642370 to pool.
+2019-10-17 17:22:54,011-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-10-17 17:22:54,026-[TS] DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-10-17 17:22:54,058-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:22:54,058-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:22:54,058-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:22:54,058-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2019-10-17 17:22:54,401-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2019-10-17 17:22:54,744-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 10642370.
+2019-10-17 17:22:54,744-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a263c2]
+2019-10-17 17:22:54,744-[TS] DEBUG main dao.BillMapper.selectBill - ==>  Preparing: select * from smbms_bill as b,smbms_provider as p WHERE b.providerId=? AND b.isPayment=? AND b.providerId=p.id 
+2019-10-17 17:22:54,791-[TS] DEBUG main dao.BillMapper.selectBill - ==> Parameters: 1(String), 2(String)
+2019-10-17 17:22:54,838-[TS] DEBUG main dao.BillMapper.selectBill - <==      Total: 1
+2019-10-17 17:22:54,838-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a263c2]
+2019-10-17 17:22:54,838-[TS] DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@a263c2]
+2019-10-17 17:22:54,838-[TS] DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 10642370 to pool.
