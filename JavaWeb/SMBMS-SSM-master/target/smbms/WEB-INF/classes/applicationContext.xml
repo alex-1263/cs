@@ -30,33 +30,33 @@
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.edu.dao"/>
     </bean>
-    <aop:aspectj-autoproxy  proxy-target-class="true"/>
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
     <!--定义事务管理器组件-->
     <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="pooledDataSource"/>
     </bean>
-    <tx:annotation-driven transaction-manager="txManager"  proxy-target-class="true"/>
+    <tx:annotation-driven transaction-manager="txManager" proxy-target-class="true"/>
 
-   <!-- <aop:config>
-        <aop:pointcut id="pointcut" expression="execution(* com.edu.service..*(..))"/>
-    <aop:aspect ref="log">
-        <aop:before method="before" pointcut-ref="pointcut"/>
-        <aop:after-returning method="afterReturning" returning="returnValue" pointcut-ref="pointcut"/>
-    </aop:aspect>
-    </aop:config>-->
+    <!-- <aop:config>
+         <aop:pointcut id="pointcut" expression="execution(* com.edu.service..*(..))"/>
+     <aop:aspect ref="log">
+         <aop:before method="before" pointcut-ref="pointcut"/>
+         <aop:after-returning method="afterReturning" returning="returnValue" pointcut-ref="pointcut"/>
+     </aop:aspect>
+     </aop:config>-->
 
-<!--    &lt;!&ndash;配置事务增强，设定事务的属性，为不同的业务方法指定具体的事务规则&ndash;&gt;-->
-<!--    <tx:advice id="txAdvice" transaction-manager="txManager">-->
-<!--        &lt;!&ndash;定制事务属性&ndash;&gt;-->
-<!--        <tx:attributes>-->
-<!--            &lt;!&ndash;propagation事务传播机制&ndash;&gt;-->
-<!--            &lt;!&ndash;SUPPORTS:表示如果存在一个事务，则支持当前事务；如果当前没有事务，则按非事务方式执行&ndash;&gt;-->
-<!--            <tx:method name="find*" propagation="SUPPORTS" />-->
-<!--            &lt;!&ndash;REQUIRED:默认值，表示如果存在一个事务，则支持当前事务；如果当前没有事务，则开启一个新的事务&ndash;&gt;-->
-<!--            <tx:method name="add*" propagation="REQUIRED" />-->
-<!--            <tx:method name="del*" propagation="REQUIRED" />-->
-<!--            <tx:method name="update*" propagation="REQUIRED" />-->
-<!--            <tx:method name="*" propagation="REQUIRED" />-->
-<!--        </tx:attributes>-->
-<!--    </tx:advice>-->
+    <!--    &lt;!&ndash;配置事务增强，设定事务的属性，为不同的业务方法指定具体的事务规则&ndash;&gt;-->
+    <!--    <tx:advice id="txAdvice" transaction-manager="txManager">-->
+    <!--        &lt;!&ndash;定制事务属性&ndash;&gt;-->
+    <!--        <tx:attributes>-->
+    <!--            &lt;!&ndash;propagation事务传播机制&ndash;&gt;-->
+    <!--            &lt;!&ndash;SUPPORTS:表示如果存在一个事务，则支持当前事务；如果当前没有事务，则按非事务方式执行&ndash;&gt;-->
+    <!--            <tx:method name="find*" propagation="SUPPORTS" />-->
+    <!--            &lt;!&ndash;REQUIRED:默认值，表示如果存在一个事务，则支持当前事务；如果当前没有事务，则开启一个新的事务&ndash;&gt;-->
+    <!--            <tx:method name="add*" propagation="REQUIRED" />-->
+    <!--            <tx:method name="del*" propagation="REQUIRED" />-->
+    <!--            <tx:method name="update*" propagation="REQUIRED" />-->
+    <!--            <tx:method name="*" propagation="REQUIRED" />-->
+    <!--        </tx:attributes>-->
+    <!--    </tx:advice>-->
 </beans>

@@ -14,6 +14,7 @@
         <result property="modifyDate" column="modifyDate"/>
     </resultMap>
     <select id="getRoleList" resultMap="userListOfRole">
-        select * from smbms_role;
+        select *
+        from smbms_role;
     </select>
 </mapper>

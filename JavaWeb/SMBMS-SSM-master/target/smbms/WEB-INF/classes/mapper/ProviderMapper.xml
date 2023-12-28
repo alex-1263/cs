@@ -30,15 +30,20 @@
     </resultMap>
 
     <select id="countProvider" resultType="int">
-        select count(*) from smbms_provider
+        select count(*)
+        from smbms_provider
     </select>
     <select id="getProviderById" resultMap="providerList">
-         select * from smbms_provider WHERE id=#{id}
+        select *
+        from smbms_provider
+        WHERE id = #{id}
     </select>
     <select id="getProviderAndBillListById" resultMap="providerAndBillList">
-         select b.id bid,p.id pid,p.*,b.*
-         from smbms_provider p,smbms_bill b
-         WHERE p.id=#{pid} AND b.providerId=p.id
+        select b.id bid, p.id pid, p.*, b.*
+        from smbms_provider p,
+             smbms_bill b
+        WHERE p.id = #{pid}
+          AND b.providerId = p.id
     </select>
     <select id="getAllProvider" resultMap="providerList">
         select * from smbms_provider
@@ -55,8 +60,10 @@
         order by id DESC
     </select>
     <insert id="add" parameterType="Provider">
-        insert into smbms_provider(proCode,proName,proDesc,proContact,proPhone,proAddress,proFax,createdBy,creationDate)
-        values (#{proCode},#{proName},#{proDesc},#{proContact},#{proPhone},#{proAddress},#{proFax},#{createdBy},#{creationDate})
+        insert into smbms_provider(proCode, proName, proDesc, proContact, proPhone, proAddress, proFax, createdBy,
+                                   creationDate)
+        values (#{proCode}, #{proName}, #{proDesc}, #{proContact}, #{proPhone}, #{proAddress}, #{proFax}, #{createdBy},
+                #{creationDate})
     </insert>
     <update id="modify" parameterType="Provider">
         update smbms_provider
@@ -92,7 +99,8 @@
         where id=#{id}
     </update>
     <delete id="delete">
-        delete from smbms_provider
-        where id=#{id}
+        delete
+        from smbms_provider
+        where id = #{id}
     </delete>
 </mapper>

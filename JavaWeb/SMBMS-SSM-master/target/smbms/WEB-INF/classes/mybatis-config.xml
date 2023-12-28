@@ -4,9 +4,9 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <!--<settings>-->
-        <!--<setting name="logImpl" value="LOG4J"/>-->
-        <!--&lt;!&ndash;<setting name="autoMappingBehavior" value="NONE"/>&ndash;&gt;-->
-        <!--&lt;!&ndash;<setting name="cacheEnabled" value="true"/>&ndash;&gt;-->
+    <!--<setting name="logImpl" value="LOG4J"/>-->
+    <!--&lt;!&ndash;<setting name="autoMappingBehavior" value="NONE"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<setting name="cacheEnabled" value="true"/>&ndash;&gt;-->
     <!--</settings>-->
     <!--实体类别名-->
     <typeAliases>
