@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.cn.bookadminister">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appcon"
+        android:label="校园图书管理"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.UpdateBooksActivity"></activity>
+        <activity android:name=".activity.QueryBooksActivity" />
+        <activity android:name=".activity.DeleteBooksActivity" />
+        <activity android:name=".activity.AddbooksActivity" />
+        <activity android:name=".app.RegisterActivity" />
+        <activity android:name=".app.MainActivity" />
+        <activity android:name=".app.LoginActivity"/>
+        <activity android:name=".app.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
