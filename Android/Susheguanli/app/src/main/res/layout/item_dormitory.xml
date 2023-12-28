@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/list"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/house" />
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv"
+        android:text="502"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_number"
+        android:layout_toRightOf="@+id/iv"
+        android:layout_marginLeft="10dp"
+        android:text="张三、李四、王五、赵六"
+        android:textColor="#000"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/tv_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="男生宿舍"
+        android:layout_below="@+id/tv_number"
+        android:layout_toRightOf="@+id/tv_name"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/tv_much"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:layout_below="@+id/tv_number"
+        android:layout_toRightOf="@+id/tv_sex"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_toRightOf="@+id/iv"
+        android:text="2023-10"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:layout_toRightOf="@+id/iv"
+        android:text="楼层:四楼"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+      />
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_alignParentRight="true"
+        android:text="备注无"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+</RelativeLayout>

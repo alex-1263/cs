@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:onClick="onClick"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="查询宿舍信息"
+            android:textSize="30sp"
+            android:textColor="#000"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl">
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宿舍号"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dialog_btn_bg"
+            android:layout_toRightOf="@+id/tv_number"
+            android:hint="请输入宿舍号"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="16sp">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="入住人"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/et_number"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dialog_btn_bg"
+            android:layout_toRightOf="@+id/tv_name"
+            android:hint="请输入名字"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="16sp">
+
+            <requestFocus />
+        </EditText>
+        <ImageView
+            android:id="@+id/iv_query"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:onClick="onClick"
+            android:src="@drawable/query" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/query_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#CDCDCD"
+        android:layout_below="@+id/rl2"
+        android:dividerHeight="6dp"
+        android:padding="10dp" />
+
+</RelativeLayout>

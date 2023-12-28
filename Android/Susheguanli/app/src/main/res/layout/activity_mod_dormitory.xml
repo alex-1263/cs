@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:onClick="onClick"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_back"
+            android:color="#000"
+            android:text="修改宿舍信息"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl"
+        >
+
+        <EditText
+            android:id="@+id/et_update"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dialog_btn_bg"
+            android:hint="请输入宿舍号"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="16sp">
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/update_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/et_update"
+            android:onClick="onClick"
+            android:src="@drawable/query" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/update_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#CDCDCD"
+        android:dividerHeight="6dp"
+        android:padding="10dp"
+        android:layout_below="@+id/rl2"/>
+
+</RelativeLayout>
