@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/compare/compare",
+    "pages/survey/surver",
+    "pages/calculate/calculate"
+
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#efa",
+    "backgroundTextStyle":"light",
+    "enablePullDownRefresh": true
+
+  },
+  "debug": true,
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/公告.png",
+        "selectedIconPath": "images/icon/公告 (1).png"
+      },{
+        "pagePath": "pages/calculate/calculate",
+        "text": "发现",
+        "iconPath": "images/icon/盒子.png",
+        "selectedIconPath": "images/icon/盒子 (1).png"
+      },{
+        "pagePath": "pages/compare/compare",
+        "text": "比较",
+        "iconPath": "images/icon/笔记.png",
+        "selectedIconPath": "images/icon/笔记 (1).png"
+      },{
+        "pagePath": "pages/survey/surver",
+        "text": "编辑",
+        "iconPath": "images/icon/编辑.png",
+        "selectedIconPath": "images/icon/编辑 (1).png"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
