@@ -4,7 +4,11 @@
     "pages/logs/logs",
     "pages/compare/compare",
     "pages/survey/surver",
-    "pages/calculate/calculate"
+    "pages/calculate/calculate",
+    "pages/compare1/compare",
+    "pages/compare2/compare",
+    "pages/compare3/compare",
+    "pages/compare4/compare"
 
   ],
   "window": {
@@ -37,6 +41,11 @@
       },{
         "pagePath": "pages/survey/surver",
         "text": "编辑",
+        "iconPath": "images/icon/编辑.png",
+        "selectedIconPath": "images/icon/编辑 (1).png"
+      },{
+        "pagePath": "pages/compare1/compare",
+        "text":"比较2",
         "iconPath": "images/icon/编辑.png",
         "selectedIconPath": "images/icon/编辑 (1).png"
       }
